@@ -29,8 +29,8 @@
     return mailgun.sendEmail({
       to: email,
       from: "beta@onereminder.co",
-      subject: "Thank you for joining OneReminder Beta",
-      text: "You will receive an email from Apple's TestFlight system with your invitation to join OneReminder's beta.\n\nCheers and you're awesome!"
+      subject: "Thank you for joining Sorted Beta",
+      text: "You will receive an email from Apple's TestFlight system with your invitation to join Sorted's beta.\n\nCheers and you're awesome!"
     }, {
       success: function(httpResponse) {
         console.log(httpResponse);

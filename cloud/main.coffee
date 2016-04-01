@@ -8,7 +8,7 @@ Parse.Cloud.afterSave "Contact", (request) ->
   mailgun.sendEmail({
     to: "leo@onereminder.co"
     from: "beta@onereminder.co"
-    subject: email + " has just registered for OneReminder Beta!"
+    subject: email + " has just registered for Sorted Beta!"
     text: "Their email is: " + email
   }, {
     success: (httpResponse) ->
