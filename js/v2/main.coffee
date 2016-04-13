@@ -36,6 +36,13 @@ $ ->
     $('.overlay').fadeOut()
     leavingOverlay = true
 
+  # Video loading
+  $(video).bind "loadstart", (e) ->
+    $('.spinner').show()
+
+  $(video).bind "play", (e) ->
+    $('.spinner').fadeOut()
+
   # Video ends
   $(video).bind "timeupdate", (e) ->
     currentTime = video.currentTime

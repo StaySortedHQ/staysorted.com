@@ -36,6 +36,12 @@
       $('.overlay').fadeOut();
       return leavingOverlay = true;
     });
+    $(video).bind("loadstart", function(e) {
+      return $('.spinner').show();
+    });
+    $(video).bind("play", function(e) {
+      return $('.spinner').fadeOut();
+    });
     $(video).bind("timeupdate", function(e) {
       var currentTime;
       currentTime = video.currentTime;
