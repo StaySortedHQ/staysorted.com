@@ -230,7 +230,9 @@ footer {
   .feature-list .icon {
     width: 100px;
     height: 100px;
-    margin: -20px -10px 0 0; }
+    min-width: 50px;
+    min-height: 50px;
+    margin: -25px -10px 0 0; }
 
 .feature.gradient {
   background: white;
