@@ -43,6 +43,12 @@ $ ->
   $(video).bind "play", (e) ->
     $('.spinner').fadeOut()
 
+  $(video).bind "playing", (e) ->
+    $('.spinner').fadeOut()
+
+  $(video).bind "waiting", (e) ->
+    $('.spinner').show()
+
   # Video ends
   $(video).bind "timeupdate", (e) ->
     currentTime = video.currentTime
