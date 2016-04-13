@@ -7,9 +7,9 @@ setupEmailModal = ->
     $(@).fadeOut()
 
   # Show email modal on click
-  $('.join-beta').on 'click', (e) ->
-    e.preventDefault()
-    $('#email-modal').fadeIn()
+  # $('.join-beta').on 'click', (e) ->
+  #   e.preventDefault()
+  #   $('#email-modal').fadeIn()
 
   # Prevent closing email modal when tapping on fields
   $('input').on 'click', (e) ->
@@ -143,4 +143,3 @@ $ ->
       if fullPageInstantiated
         $.fn.fullpage.destroy('all')
         fullPageInstantiated = false
-
