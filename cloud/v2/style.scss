@@ -1,0 +1,441 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis:400,500,600,700,300,200&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,300,200);
+
+$blue: #3590FC;
+$purple: #A82ED1;
+$pink: #FF3686;
+$red: #EE1111;
+$green: #7ED321;
+$orange: #F37E02;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 24px;
+  color: #999;
+}
+
+h1 {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 200;
+  font-size: 2em;
+}
+
+h2 {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 300;
+  font-size: 1.4em;
+}
+
+.fullWidth {
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: initial;
+}
+
+.hero {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  right: 0;
+
+  video {
+    position: absolute;
+    z-index: -999;
+    min-width: 100%;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%) translateY(8%);
+  }
+
+  .overlay {
+
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    background: rgba(0,0,0,0.7);
+    padding-top: 12%;
+
+    h1, h2 {
+      color: white;
+    }
+
+    h1 {
+      font-weight: 200;
+      font-size: 5.5em;
+      margin: 0;
+      line-height: 1em;
+    }
+
+    h2 {
+      font-weight: 400;
+      font-size: 2.4em;
+      margin-bottom: 0;
+      line-height: 1em;
+    }
+
+    .video-control {
+      z-index: 999;
+      color: white;
+      display: inline-block;
+      font-weight: 600;
+      margin: 2em 0 1em;
+      height: 70px;
+      width: 320px;
+      line-height: 70px;
+      border-radius: 50px;
+      border: 2px solid white;
+      margin-top: 4em;
+      text-align: left;
+
+      .fa {
+        display: inline-block;
+        margin-left: 32px;
+        margin-right: 34px;
+        font-size: 1.2em;
+        vertical-align: -0.05em;
+      }
+    }
+
+    a.download {
+      font-weight: 600;
+      display: inline-block;
+      color: black;
+      background: white;
+      width: 320px;
+      height: 70px;
+      line-height: 70px;
+      border-radius: 50px;
+      text-align: left;
+
+      .fa-apple {
+        display: inline-block;
+        margin-left: 32px;
+        margin-right: 40px;
+        font-size: 1.2em;
+        vertical-align: -0.05em;
+      }
+    }
+  }
+}
+
+nav {
+
+  position: absolute;
+  z-index: 2;
+
+  .logo {
+    width: 70px;
+    height: 70px;
+    margin: 26px 30px;
+    padding: -2px;
+  }
+
+  h1 {
+    margin-top: 0.3em;
+    margin-left: 1em;
+    color: white;
+  }
+
+  ul {
+    list-style: none;
+    margin-top: 1.8em;
+
+    li {
+      margin: 1.4em;
+      display: inline;
+
+      a {
+        color: white;
+        -webkit-transition: color 1s;
+      }
+
+      :hover {
+        color: rgba(255, 255, 255, 0.7) !important;
+        -webkit-transition: color 1s;
+      }
+    }
+  }
+
+  a {
+    color: white;
+    font-weight: 400;
+    font-size: 0.8em;
+  }
+
+}
+
+.download-small {
+  color: white;
+  padding: 10px 1.4em;
+  border: 2px solid white;
+  border-radius: 100px;
+}
+
+.press-coverages {
+  padding: 4em 0 4.5em;
+  background: #F1F7FC;
+
+  img {
+    height: 95px;
+  }
+}
+
+.short-feature {
+  img {
+    width: 30px;
+    height: 30px;
+    margin-top: 6px;
+  }
+
+  p {
+    margin-top: 0.7em;
+    margin-bottom: 2em;
+  }
+}
+
+.showcase-video {
+
+  padding: 3em 0;
+
+  iframe {
+    display: block;
+    margin: 0 auto;
+    width: 900px;
+    height: 506.25px;
+  }
+
+  video {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    min-width: 600px;
+  }
+}
+
+.beta-signup {
+
+  text-align: center;
+  padding: 3em 0;
+  background: #292929;
+
+  input {
+    float: left;
+    height: 3em;
+    font-family: 'Dosis', sans-serif;
+    border-radius: 5px;
+    border-width: 0px;
+    margin-top: 20px;
+  }
+
+  input[type=email] {
+    width: 70%;
+    margin-right: 10px;
+    color: rgb(153, 153, 153);
+    font-size: 0.9em;
+    font-weight: 500;
+    padding-left: 30px;
+    height: 60px;
+  }
+
+  input[type=submit] {
+    width: 25%;
+    height: 60px;
+    background-color: $blue;
+    color: white;
+  }
+
+  input:focus {
+    border-color: $blue;
+    box-shadow:none;
+  }
+
+  .response {
+    margin-top: 120px;
+  }
+}
+
+footer {
+
+  padding: 4em 0;
+  background: #1F1F1F;
+  text-align: center;
+
+  a {
+    font-size: 0.7em;
+    color: white;
+    -webkit-transition: color 1s;
+    margin: 0 1.4em;
+
+    :hover {
+      color: $blue;
+      -webkit-transition: color 1s;
+    }
+  }
+
+  p {
+    margin-top: 4em;
+    font-size: 0.6em;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    display: inline;
+  }
+
+}
+
+.title {
+  text-align: center;
+  padding: 2em 0;
+  font-size: 30px;
+}
+
+.feature-list {
+  padding-bottom: 2em;
+
+  .icon {
+    width: 100px;
+    height: 100px;
+    margin: -20px -10px 0 0;
+  }
+}
+
+.feature.gradient {
+  background: rgba(255,255,255,1);
+  background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(248,250,252,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(248,250,252,1)));
+  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(248,250,252,1) 100%);
+  background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(248,250,252,1) 100%);
+  background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(248,250,252,1) 100%);
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(248,250,252,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f8fafc', GradientType=0 );
+}
+
+.gray {
+  background: #F8FAFC;
+}
+
+.red {
+  background: red;
+}
+
+.blue-text {
+  color: $blue;
+}
+
+.purple-text {
+  color: $purple;
+}
+
+.pink-text {
+  color: $pink;
+}
+
+.red-text {
+  color: $red;
+}
+
+.green-text {
+  color: $green;
+}
+.orange-text {
+  color: $orange;
+}
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+  .hero {
+    height: 600px;
+
+    h1 {
+      text-align: center;
+      margin-left: 0.5em;
+    }
+
+    ul {
+      margin: 15px 0 0 9px;;
+      text-align: center;
+
+      li {
+        margin: 0.4em;
+      }
+    }
+
+    video {
+      max-height: 800px;
+    }
+
+    .overlay-title {
+      display: none;
+    }
+
+    .video-control {
+      margin-top: 230px !important;
+      width: 300px !important;
+    }
+
+    .download {
+      width: 300px !important;
+
+    }
+  }
+
+
+  .feature-list {
+    .text-right, h2, p {
+      text-align: center;
+    }
+  }
+
+  .showcase-video video {
+    min-width: 200px;
+  }
+
+  .beta-signup {
+    h2, p, form {
+      padding: 10px;
+    }
+  }
+}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .hero {
+    height: 800px;
+
+    video {
+      max-height: 900px;
+    }
+  }
+
+  footer {
+    a {
+      margin: 0 1em;
+    }
+  }
+}
+
+/* Large and up */
+@media screen and (min-width: 64em) {
+  .hero {
+    height: 900px;
+  }
+}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}

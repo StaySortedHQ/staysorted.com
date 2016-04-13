@@ -1,0 +1,300 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis:400,500,600,700,300,200&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,300,200);
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 24px;
+  color: #999; }
+
+h1 {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 200;
+  font-size: 2em; }
+
+h2 {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 300;
+  font-size: 1.4em; }
+
+.fullWidth {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: initial; }
+
+.hero {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  right: 0; }
+  .hero video {
+    position: absolute;
+    z-index: -999;
+    min-width: 100%;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%) translateY(8%); }
+  .hero .overlay {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding-top: 12%; }
+    .hero .overlay h1, .hero .overlay h2 {
+      color: white; }
+    .hero .overlay h1 {
+      font-weight: 200;
+      font-size: 5.5em;
+      margin: 0;
+      line-height: 1em; }
+    .hero .overlay h2 {
+      font-weight: 400;
+      font-size: 2.4em;
+      margin-bottom: 0;
+      line-height: 1em; }
+    .hero .overlay .video-control {
+      z-index: 999;
+      color: white;
+      display: inline-block;
+      font-weight: 600;
+      margin: 2em 0 1em;
+      height: 70px;
+      width: 320px;
+      line-height: 70px;
+      border-radius: 50px;
+      border: 2px solid white;
+      margin-top: 4em;
+      text-align: left; }
+      .hero .overlay .video-control .fa {
+        display: inline-block;
+        margin-left: 32px;
+        margin-right: 34px;
+        font-size: 1.2em;
+        vertical-align: -0.05em; }
+    .hero .overlay a.download {
+      font-weight: 600;
+      display: inline-block;
+      color: black;
+      background: white;
+      width: 320px;
+      height: 70px;
+      line-height: 70px;
+      border-radius: 50px;
+      text-align: left; }
+      .hero .overlay a.download .fa-apple {
+        display: inline-block;
+        margin-left: 32px;
+        margin-right: 40px;
+        font-size: 1.2em;
+        vertical-align: -0.05em; }
+
+nav {
+  position: absolute;
+  z-index: 2; }
+  nav .logo {
+    width: 70px;
+    height: 70px;
+    margin: 26px 30px;
+    padding: -2px; }
+  nav h1 {
+    margin-top: 0.3em;
+    margin-left: 1em;
+    color: white; }
+  nav ul {
+    list-style: none;
+    margin-top: 1.8em; }
+    nav ul li {
+      margin: 1.4em;
+      display: inline; }
+      nav ul li a {
+        color: white;
+        -webkit-transition: color 1s; }
+      nav ul li :hover {
+        color: rgba(255, 255, 255, 0.7) !important;
+        -webkit-transition: color 1s; }
+  nav a {
+    color: white;
+    font-weight: 400;
+    font-size: 0.8em; }
+
+.download-small {
+  color: white;
+  padding: 10px 1.4em;
+  border: 2px solid white;
+  border-radius: 100px; }
+
+.press-coverages {
+  padding: 4em 0 4.5em;
+  background: #F1F7FC; }
+  .press-coverages img {
+    height: 95px; }
+
+.short-feature img {
+  width: 30px;
+  height: 30px;
+  margin-top: 6px; }
+.short-feature p {
+  margin-top: 0.7em;
+  margin-bottom: 2em; }
+
+.showcase-video {
+  padding: 3em 0; }
+  .showcase-video iframe {
+    display: block;
+    margin: 0 auto;
+    width: 900px;
+    height: 506.25px; }
+  .showcase-video video {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    min-width: 600px; }
+
+.beta-signup {
+  text-align: center;
+  padding: 3em 0;
+  background: #292929; }
+  .beta-signup input {
+    float: left;
+    height: 3em;
+    font-family: 'Dosis', sans-serif;
+    border-radius: 5px;
+    border-width: 0px;
+    margin-top: 20px; }
+  .beta-signup input[type=email] {
+    width: 70%;
+    margin-right: 10px;
+    color: #999999;
+    font-size: 0.9em;
+    font-weight: 500;
+    padding-left: 30px;
+    height: 60px; }
+  .beta-signup input[type=submit] {
+    width: 25%;
+    height: 60px;
+    background-color: #3590fc;
+    color: white; }
+  .beta-signup input:focus {
+    border-color: #3590fc;
+    box-shadow: none; }
+  .beta-signup .response {
+    margin-top: 120px; }
+
+footer {
+  padding: 4em 0;
+  background: #1F1F1F;
+  text-align: center; }
+  footer a {
+    font-size: 0.7em;
+    color: white;
+    -webkit-transition: color 1s;
+    margin: 0 1.4em; }
+    footer a :hover {
+      color: #3590fc;
+      -webkit-transition: color 1s; }
+  footer p {
+    margin-top: 4em;
+    font-size: 0.6em; }
+  footer ul {
+    list-style: none; }
+  footer li {
+    display: inline; }
+
+.title {
+  text-align: center;
+  padding: 2em 0;
+  font-size: 30px; }
+
+.feature-list {
+  padding-bottom: 2em; }
+  .feature-list .icon {
+    width: 100px;
+    height: 100px;
+    margin: -20px -10px 0 0; }
+
+.feature.gradient {
+  background: white;
+  background: -moz-linear-gradient(top, white 0%, #f8fafc 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, white), color-stop(100%, #f8fafc));
+  background: -webkit-linear-gradient(top, white 0%, #f8fafc 100%);
+  background: -o-linear-gradient(top, white 0%, #f8fafc 100%);
+  background: -ms-linear-gradient(top, white 0%, #f8fafc 100%);
+  background: linear-gradient(to bottom, white 0%, #f8fafc 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f8fafc', GradientType=0 ); }
+
+.gray {
+  background: #F8FAFC; }
+
+.red {
+  background: red; }
+
+.blue-text {
+  color: #3590fc; }
+
+.purple-text {
+  color: #a82ed1; }
+
+.pink-text {
+  color: #ff3686; }
+
+.red-text {
+  color: #ee1111; }
+
+.green-text {
+  color: #7ed321; }
+
+.orange-text {
+  color: #f37e02; }
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+  .hero {
+    height: 600px; }
+    .hero h1 {
+      text-align: center;
+      margin-left: 0.5em; }
+    .hero ul {
+      margin: 15px 0 0 9px;
+      text-align: center; }
+      .hero ul li {
+        margin: 0.4em; }
+    .hero video {
+      max-height: 800px; }
+    .hero .overlay-title {
+      display: none; }
+    .hero .video-control {
+      margin-top: 230px !important;
+      width: 300px !important; }
+    .hero .download {
+      width: 300px !important; }
+
+  .feature-list .text-right, .feature-list h2, .feature-list p {
+    text-align: center; }
+
+  .showcase-video video {
+    min-width: 200px; }
+
+  .beta-signup h2, .beta-signup p, .beta-signup form {
+    padding: 10px; } }
+/* Medium and up */
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .hero {
+    height: 800px; }
+    .hero video {
+      max-height: 900px; }
+
+  footer a {
+    margin: 0 1em; } }
+/* Large and up */
+@media screen and (min-width: 64em) {
+  .hero {
+    height: 900px; } }
+/* Large only */
