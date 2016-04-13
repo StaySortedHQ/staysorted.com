@@ -378,6 +378,11 @@ footer {
 
 /* Small only */
 @media screen and (max-width: 39.9375em) {
+
+  body {
+    font-size: 1.2em;
+  }
+
   .hero {
     height: 600px;
 
@@ -405,15 +410,31 @@ footer {
 
     .video-control {
       margin-top: 230px !important;
-      width: 300px !important;
+      width: 240px !important;
+
+      .fa {
+        margin-right: 20px !important;
+      }
     }
 
     .download {
-      width: 300px !important;
+      width: 240px !important;
 
+      .fa {
+        margin-right: 24px !important;
+      }
     }
   }
 
+  .title {
+    h1 {
+      font-size: 1.4em;
+    }
+  }
+
+  blockquote {
+    font-size: 0.6em;
+  }
 
   .feature-list {
     .text-right, h2, p {
@@ -429,6 +450,34 @@ footer {
     h2, p, form {
       padding: 10px;
     }
+
+    form {
+      text-align: center;
+    }
+
+    input[type=submit] {
+      width: 90%;
+      float: none;
+    }
+
+    input[type=email] {
+      float: none;
+      width: 90%;
+      color: rgb(153, 153, 153);
+      font-size: 0.7em;
+      font-weight: 500;
+      height: 60px;
+      margin: 0 auto;
+    }
+  }
+
+  .short-feature .medium-6 {
+    margin-bottom: 3em;
+  }
+
+  footer {
+    font-size: 0.8em;
+    padding: 2em 0;
   }
 }
 

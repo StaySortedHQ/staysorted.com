@@ -270,6 +270,9 @@ footer {
 
 /* Small only */
 @media screen and (max-width: 39.9375em) {
+  body {
+    font-size: 1.2em; }
+
   .hero {
     height: 600px; }
     .hero h1 {
@@ -286,9 +289,19 @@ footer {
       display: none; }
     .hero .video-control {
       margin-top: 230px !important;
-      width: 300px !important; }
+      width: 240px !important; }
+      .hero .video-control .fa {
+        margin-right: 20px !important; }
     .hero .download {
-      width: 300px !important; }
+      width: 240px !important; }
+      .hero .download .fa {
+        margin-right: 24px !important; }
+
+  .title h1 {
+    font-size: 1.4em; }
+
+  blockquote {
+    font-size: 0.6em; }
 
   .feature-list .text-right, .feature-list h2, .feature-list p {
     text-align: center; }
@@ -297,7 +310,27 @@ footer {
     min-width: 200px; }
 
   .beta-signup h2, .beta-signup p, .beta-signup form {
-    padding: 10px; } }
+    padding: 10px; }
+  .beta-signup form {
+    text-align: center; }
+  .beta-signup input[type=submit] {
+    width: 90%;
+    float: none; }
+  .beta-signup input[type=email] {
+    float: none;
+    width: 90%;
+    color: #999999;
+    font-size: 0.7em;
+    font-weight: 500;
+    height: 60px;
+    margin: 0 auto; }
+
+  .short-feature .medium-6 {
+    margin-bottom: 3em; }
+
+  footer {
+    font-size: 0.8em;
+    padding: 2em 0; } }
 /* Medium and up */
 /* Medium only */
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
