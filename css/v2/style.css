@@ -5,7 +5,7 @@ body {
   padding: 0;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 24px;
-  color: #999; }
+  color: #777; }
 
 h1 {
   font-family: 'Dosis', sans-serif;
@@ -135,6 +135,19 @@ nav {
   background: #F1F7FC; }
   .press-coverages img {
     height: 95px; }
+
+blockquote {
+  margin-top: 2em;
+  border-left: 3px solid #AAA;
+  color: #AAA;
+  font-size: 0.9em; }
+  blockquote h2 {
+    text-align: center; }
+  blockquote cite {
+    font-size: 0.6em;
+    text-align: right;
+    margin-left: 2em;
+    margin-right: 2em; }
 
 .short-feature img {
   width: 30px;
