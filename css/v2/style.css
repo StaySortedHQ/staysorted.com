@@ -316,6 +316,18 @@ footer {
   body {
     font-size: 1.2em; }
 
+  .logo {
+    width: 50px !important;
+    margin: 0 !important; }
+
+  nav {
+    background: rgba(0, 0, 0, 0.3);
+    height: 70px; }
+    nav ul {
+      margin-top: 20px !important; }
+    nav li {
+      margin: 20px !important; }
+
   .hero {
     height: 600px; }
     .hero h1 {
