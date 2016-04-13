@@ -140,7 +140,7 @@ h2 {
 
 nav {
   position: absolute;
-  z-index: 4; }
+  z-index: 99; }
   nav .logo {
     width: 70px;
     height: 70px;

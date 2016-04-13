@@ -1,5 +1,6 @@
 $ ->
 
+
   video = $('#hero-video')[0]
   leavingOverlay = false
 
@@ -13,7 +14,7 @@ $ ->
       $('.resume').removeClass("hide", 0, "easeInBack" )
 
   # Click on playing video
-  $('.hero').bind "click", ->
+  $('#hero-video').bind "click", ->
     if !video.paused and !leavingOverlay
       video.pause()
       showReplayButton(false)
@@ -62,5 +63,3 @@ $ ->
       video.pause()
       showReplayButton(false)
       $('.overlay').fadeIn()
-
-

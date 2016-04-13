@@ -13,7 +13,7 @@
         return $('.resume').removeClass("hide", 0, "easeInBack");
       }
     };
-    $('.hero').bind("click", function() {
+    $('#hero-video').bind("click", function() {
       if (!video.paused && !leavingOverlay) {
         video.pause();
         showReplayButton(false);
