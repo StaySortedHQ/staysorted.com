@@ -74,10 +74,11 @@ h2 {
   overflow: hidden;
   position: relative;
   top: 0;
-  right: 0; }
+  right: 0;
+  background: #234983; }
   .hero video {
     position: absolute;
-    z-index: -999;
+    z-index: 1;
     min-width: 100%;
     left: 50%;
     bottom: 0;
@@ -91,7 +92,8 @@ h2 {
     bottom: 0;
     text-align: center;
     background: rgba(0, 0, 0, 0.7);
-    padding-top: 12%; }
+    padding-top: 12%;
+    z-index: 2; }
     .hero .overlay h1, .hero .overlay h2 {
       color: white; }
     .hero .overlay h1 {
