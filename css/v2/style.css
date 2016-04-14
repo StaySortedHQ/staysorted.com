@@ -216,7 +216,8 @@ blockquote {
 .beta-signup {
   text-align: center;
   padding: 3em 0;
-  background: #292929; }
+  background: #292929;
+  color: #aaa; }
   .beta-signup input {
     float: left;
     height: 3em;
@@ -242,6 +243,17 @@ blockquote {
     box-shadow: none; }
   .beta-signup .response {
     margin-top: 120px; }
+  .beta-signup .download {
+    border: 2px solid #aaa;
+    padding: 1em;
+    height: 60px;
+    border-radius: 60px;
+    color: #aaa; }
+    .beta-signup .download .fa {
+      margin-top: 14px;
+      margin-bottom: 2em;
+      margin-right: 20px;
+      font-size: 1.4em; }
 
 footer {
   padding: 4em 0;
