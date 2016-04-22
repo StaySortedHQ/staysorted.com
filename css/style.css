@@ -200,6 +200,8 @@ main#main {
     margin-top: 4px; }
   .section .press-logos {
     margin-bottom: 30px; }
+    .section .press-logos a:hover {
+      background: rgba(255, 255, 255, 0); }
 
 #fp-nav span, .fp-slidesNav span {
   background: white !important; }
@@ -229,7 +231,7 @@ a {
   display: block;
   margin-top: 1em; }
 
-a:hover:not(.join-beta, .press-logos), a:active {
+a:hover:not(.join-beta), a:active {
   color: white;
   background: rgba(255, 255, 255, 0.1); }
 

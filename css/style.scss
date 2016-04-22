@@ -296,6 +296,10 @@ main#main {
 
   .press-logos {
     margin-bottom: 30px;
+
+    a:hover{
+      background: rgba(255, 255, 255, 0);
+    }
   }
 }
 
@@ -343,7 +347,7 @@ a {
   }
 }
 
-a:hover:not(.join-beta, .press-logos), a:active {
+a:hover:not(.join-beta), a:active {
   color: white;
   background: rgba(255, 255, 255, 0.1);
 }
