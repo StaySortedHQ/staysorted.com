@@ -283,6 +283,20 @@ main#main {
   p {
     margin-bottom: 2em;
   }
+
+  .TC-logo {
+    max-height: 50px;
+  }
+
+  .SCMP-logo {
+    max-height: 57px;
+    margin-left: 20px;
+    margin-top: 4px;
+  }
+
+  .press-logos {
+    margin-bottom: 30px;
+  }
 }
 
 #fp-nav, .fp-slidesNav {
@@ -329,7 +343,7 @@ a {
   }
 }
 
-a:hover:not(.join-beta), a:active {
+a:hover:not(.join-beta, .press-logos), a:active {
   color: white;
   background: rgba(255, 255, 255, 0.1);
 }
