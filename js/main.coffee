@@ -7,9 +7,9 @@ setupEmailModal = ->
     $(@).fadeOut()
 
   # Show email modal on click
-  # $('.join-beta').on 'click', (e) ->
-  #   e.preventDefault()
-  #   $('#email-modal').fadeIn()
+  $('.beta-sign-up-text').on 'click', (e) ->
+    e.preventDefault()
+    $('#email-modal').fadeIn()
 
   # Prevent closing email modal when tapping on fields
   $('input').on 'click', (e) ->

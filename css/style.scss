@@ -271,6 +271,62 @@ main#main {
   display: none;
 }
 
+.signup-overlay {
+  margin-top: 100px;
+}
+
+input {
+  float: left;
+  height: 3em;
+  font-family: 'Dosis', sans-serif;
+  border-radius: 5px;
+  border-width: 0px;
+  margin-top: 20px;
+}
+
+input[type=email] {
+  border-radius: 5px;
+  width: 70%;
+  margin-right: 10px;
+  color: rgb(153, 153, 153);
+  font-size: 1em;
+  font-weight: 300;
+  padding-left: 30px;
+  height: 50px;
+}
+
+input[type=submit] {
+  width: 25%;
+  height: 50px;
+  background-color: #3590FC;
+  color: white;
+  border-radius: 5px;
+  margin-top: 0;
+}
+
+input:focus {
+  border-color: #3590FC;
+  box-shadow:none;
+}
+
+.response {
+  margin-top: 120px;
+}
+
+.download {
+  border: 2px solid #aaa;
+  padding: 1em;
+  height: 60px;
+  border-radius: 60px;
+  color: #aaa;
+
+  .fa {
+    margin-top: 14px;
+    margin-bottom: 2em;
+    margin-right: 20px;
+    font-size: 1.4em;
+  }
+}
 
 .section {
   transition: background-color 0.5s ease;
@@ -301,6 +357,19 @@ main#main {
     a:hover{
       background: rgba(255, 255, 255, 0);
     }
+  }
+
+  .beta-sign-up {
+    margin-top: 40px;
+
+    a:hover{
+      background: rgba(255, 255, 255, 0);
+      color: #FFF89C;
+    }
+  }
+
+  .beta-sign-up-text {
+    color: #FFF89C;
   }
 }
 
