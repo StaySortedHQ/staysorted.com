@@ -108,7 +108,8 @@
 .promoVideoButton {
   font-family: 'Comfortaa', cursive;
   font-size: 1.1em;
-  font-weight: 300; }
+  font-weight: 300;
+  padding-right: 5px; }
   .promoVideoButton.large {
     font-size: 1.4em; }
     .promoVideoButton.large img {
