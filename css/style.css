@@ -248,6 +248,10 @@ input:focus {
     max-height: 57px;
     margin-left: 20px;
     margin-top: 4px; }
+  .section .LH-logo {
+    max-height: 50px;
+    margin-left: 50px;
+    margin-top: 4px; }
   .section .press-logos {
     margin-bottom: 30px; }
     .section .press-logos a:hover {
