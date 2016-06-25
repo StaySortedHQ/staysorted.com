@@ -243,14 +243,16 @@ input:focus {
   .section p {
     margin-bottom: 2em; }
   .section .TC-logo {
-    max-height: 50px; }
-  .section .SCMP-logo {
-    max-height: 57px;
+    max-height: 25px;
     margin-left: 20px;
-    margin-top: 4px; }
+    margin-top: 8px; }
+  .section .SCMP-logo {
+    max-height: 30px;
+    margin-left: 20px;
+    margin-top: 8px; }
   .section .LH-logo {
-    max-height: 50px;
-    margin-left: 50px;
+    max-height: 30px;
+    margin-left: 20px;
     margin-top: 4px; }
   .section .press-logos {
     margin-bottom: 30px; }
