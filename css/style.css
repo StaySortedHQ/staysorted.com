@@ -266,6 +266,22 @@ input:focus {
   .section .beta-sign-up-text {
     color: #FFF89C; }
 
+  .TC-logo-small {
+    max-height: 25px;
+    margin-left: 20px;
+    margin-top: 8px;
+    margin-bottom: 15px; }
+  .SCMP-logo-small {
+    max-height: 30px;
+    margin-left: 20px;
+    margin-top: 8px;
+    margin-bottom: 15px; }
+  .LH-logo-small {
+    max-height: 30px;
+    margin-left: 20px;
+    margin-top: 4px;
+    margin-bottom: 15px; }
+
 #fp-nav span, .fp-slidesNav span {
   background: white !important; }
 
