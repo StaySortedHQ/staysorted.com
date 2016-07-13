@@ -234,6 +234,10 @@ input:focus {
     margin-right: 20px;
     font-size: 1.4em; }
 
+.small-beta {
+  margin-top: 80px;
+}
+
 .section {
   transition: background-color 0.5s ease;
   background: transparent; }
