@@ -258,6 +258,10 @@ input:focus {
     max-height: 30px;
     margin-left: 20px;
     margin-top: 4px; }
+  .section .AG-logo {
+    max-height: 45px;
+    margin-left: 20px;
+    margin-top: 10px; }
   .section .press-logos {
     margin-bottom: 30px; }
     .section .press-logos a:hover {
@@ -283,6 +287,11 @@ input:focus {
   .LH-logo-small {
     max-height: 30px;
     margin-left: 20px;
+    margin-top: 4px;
+    margin-bottom: 15px; }
+  .AG-logo-small {
+    max-height: 40px;
+    margin-left: 10px;
     margin-top: 4px;
     margin-bottom: 15px; }
 
