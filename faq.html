@@ -1,157 +1,172 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css"><link rel="stylesheet" href="./css/font-awesome.min.css"><link rel="stylesheet" href="./css/feather.min.css"><link href='https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    
+	<script src="./js/jquery-2.1.0.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/blocs.min.js"></script>
+    <title>StaySorted | Sorted 1.5 for iPhone and iPad | FAQ</title>
 
-  <meta charset="UTF-8">
-  <meta name="author" content="Mind Fund Studio">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
-
-  <title>Sorted - todo app that keeps up with you</title>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/normalize.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link rel='shortcut icon' type='image/x-icon' href='images/favicon.png'/>
-  <link rel="stylesheet" href="css/jquery.fullPage.css">
-  <link rel="stylesheet" href="css/style.css">
-
-  <!-- Google Analytics -->
-  <script src='js/google-analytics.js'></script>
-
+    
+<!-- Google Analytics -->
+ 
+<!-- Google Analytics END -->
+    
 </head>
 <body>
+<!-- Main container -->
+<div class="page-container">
+    
+<!-- bloc-0 -->
+<div class="bloc bgc-ghost-white l-bloc" id="bloc-0">
+	<div class="container b-divider">
+		<nav class="navbar nav-invert row">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="http://staysorted.com/"><img src="img/AppIcon.png" alt="logo" /></a>
+				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
+					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse navbar-1">
+				<ul class="site-navigation nav navbar-nav">
+					<li>
+						<a href="http://staysorted.com/" id="pl-undefined">Sorted</a>
+					</li>
+					<li>
+						<a href="https://medium.com/@StaySorted/sorted-the-todo-app-that-keeps-up-with-you-ios-media-kit-243c7539d6c9#.ixosjynaq" id="pl-undefined" target="_blank">Press Kit</a>
+					</li>
+					<li>
+						<a href="faq.html">FAQ</a>
+					</li>
+					<li>
+						<div class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Features<span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li>
+									<a href="apple-watch-app.html">Apple Watch</a>
+								</li>
+								<li>
+									<a href="url-scheme.html">URL Scheme</a>
+								</li>
+								<li>
+									<a href="share-extension.html">Share Extension</a>
+								</li>
+								<li>
+									<a href="3d-touch-support.html">3D Touch Support</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="https://itunes.apple.com/app/apple-store/id1022256487?pt=2028806&amp;ct=SortedWebsite&amp;mt=8" target="_blank">Download</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+</div>
+<!-- bloc-0 END -->
 
-  <!-- Common Content -->
-  <main id="faq" class="page-wrap common-content">
-    <nav>
-      <div class="row fullWidth">
-        <div class="small-6 medium-6 columns small-text-left">
-          <a href="index.html">
-            <img src="images/OneReminder.png" alt="Sorted">
-            <h1>Sorted</h1>
-          </a>
-        </div>
-        <div class="small-6 medium-6 columns text-right">
-          <ul class="nav show-for-medium-up">
-            <li><a class="highlight" href="about.html">About</a></li>
-            <li><a class="active" href="#">FAQ</a></li>
-          </ul>
-          <h2 class="show-for-small-only">
-            FAQ
-          </h2>
-        </div>
-      </div>
-    </nav>
-    <div class="content">
-      <div class="row">
-        <div class="small-11 columns small-centered">
-          <!-- <section>
-            <h2>Why another task management app?</h2>
-            <blockquote>
-              <i>I couldn't find a simple app that let's me schedule and update my tasks without doing it one item at a time.</i>
-            </blockquote>
-            <p>
-              Scheduled tasks are more likely to get done. But updating them can be a pain. What happens when your schedule changes?
-            </p>
-            <p>
-              For example, changing the time of a meeting often means shifting other tasks around one item at a time.
-            </p>
-            <p>
-              Sorted solves this with delightful gestures to manage multiple items at a time. So you can do more and manage less.
-            </p>
-          </section> -->
-          <section>
-            <h2>Does Sorted support iCloud?</h2>
-            <p>Yes. Sorted syncs your reminders via iCloud CloudKit service. All information synced is kept private and secure by Apple.</p>
-          </section>
-          <section>
-            <h2>Does Sorted for iOS support Background App Refresh?</h2>
-            <p>Yes. Whenever Background App Refresh launches Sorted, Sorted will connect to CloudKit and ensure your reminders are always kept up to date.</p>
-          </section>
-          <section>
-            <h2>Does Sorted work with the Reminders app on iOS / OSX?</h2>
-            <p>Not at this time, but this will be a feature on an upcoming update. We're looking forward to managing reminders set using Siri!</p>
-          </section>
-          <section>
-            <h2>Why schedule tasks?</h2>
-            <p>
-              Behavioral studies show that scheduled tasks are more likely to get done.
-            </p>
-            <p>
-              Scheduling also forces us to consider our most limited resource: <b>TIME!</b> This helps us prioritize what we should and can do in a day.
-            </p>
-          </section>
-          <section>
-            <h2>Does Sorted follow any task management approaches?</h2>
-            <p>
-              Sorted was built on the following concepts:
-            </p>
-            <ul>
-              <li>The <a href="http://www.lifehack.org/articles/featured/back-to-basics-the-tickler-file.html" target="_blank"><u>tickler file system</u></a> (aka GTD filing system, 43 folders)</li>
-              <li><a href="http://www.lifehack.org/articles/productivity/scheduling-time-blocks.html"><u>Scheduled</u></a> tasks gets done</li>
-              <li>Quick and simple is better than overly complex systems</li>
-            </ul>
-          </section>
-        </div>
-      </div>
-    </div>
-  </main>
+<!-- bloc-17 -->
+<div class="bloc tc-charcoal bgc-ghost-white l-bloc" id="bloc-17">
+	<div class="container bloc-lg">
+		<div class="row">
+			<div class="col-sm-12">
+				<h3 class="mg-md  tc-charcoal">
+					Frequently Asked Questions
+				</h3>
+				<p>
+					<strong><u>Does Sorted support iCloud?</u><br></strong><br>Yes. Sorted syncs your reminders via iCloud CloudKit service. All information synced is kept private and secure by Apple.<br><br><strong><u>Does Sorted for iOS support Background App Refresh?</u></strong><br><br>Yes. Whenever Background App Refresh launches Sorted, Sorted will connect to CloudKit and ensure your reminders are always kept up to date.<br><br><strong><u>Does Sorted work with the Reminders app on iOS / OSX?</u></strong><br><br>Not at this time, but this will be a feature on an upcoming update. We're looking forward to managing reminders set using Siri!<br><br><strong><u>Why schedule tasks?</u></strong><br><br>Behavioral studies show that scheduled tasks are more likely to get done.<br><br>Scheduling also forces us to consider our most limited resource: TIME! This helps us prioritize what we should and can do in a day.<br><br><strong><u>Does Sorted follow any task management approaches?</u></strong><br><br>Sorted was built on the following concepts:<br><br>The&nbsp;<a class="ltc-ball-blue" href="http://www.lifehack.org/articles/featured/back-to-basics-the-tickler-file.html" target="_blank">tickler file system</a>&nbsp;(aka GTD filing system, 43 folders)<br><a class="ltc-ball-blue" href="http://www.lifehack.org/articles/productivity/scheduling-time-blocks.html" target="_blank">Scheduled</a>&nbsp;tasks gets done<br>Quick and simple is better than overly complex systems <br><br>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-17 END -->
 
-  <!-- Medium Up Content -->
-  <div class="medium-up-content show-for-medium-up">
-    <footer>
-      <div class="row fullWidth">
-        <div class="small-12 medium-5 columns medium-text-left small-text-center">
-          Crafted with <i class="fa fa-heart red"></i> <a href="http://mindfund.com/"> @<b>MindFundStudio</b> </a>
-        </div>
-        <div class="small-12 medium-7 columns medium-text-right small-text-center">
-          <ul class="nav">
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="patent/PAT9176657.pdf" target="_blank">Patent</a></li>
-            <li>
-              <a href="https://twitter.com/Stay_Sorted" target="_blank">
-                <i class="fa fa-twitter"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com/StaySortedApp/" target="_blank">
-                <i class="fa fa-facebook"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </footer>
-  </div>
+<!-- ScrollToTop Button -->
+<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
+<!-- ScrollToTop Button END-->
 
-  <!-- Small Content -->
-  <div class="small-content show-for-small-only">
-    <footer>
-      <section class="one">
-        <ul class="nav">
-          <li><a class="highlight" href="about.html">About</a></li>
-          <li><a class="active" href="#">FAQ</a></li>
-          <li><a href="patent/PAT9176657.pdf" target="_blank">Patent</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </section>
-      <section class="two">
-        <ul class="nav">
-          <li>
-            <a href="https://twitter.com/Stay_Sorted" target="_blank">
-              <i class="fa fa-twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/StaySortedApp/" target="_blank">
-              <i class="fa fa-facebook"></i>
-            </a>
-          </li>
-        </ul>
-        Crafted with <i class="fa fa-heart red"></i> <a href="http://mindfund.com/"> @<b>MindFundStudio</b> </a>
-      </section>
-    </footer>
-  </div>
+
+<!-- Footer - bloc-41 -->
+<div class="bloc bgc-charcoal d-bloc" id="bloc-41">
+	<div class="container bloc-sm">
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="text-center">
+					<a href="https://www.facebook.com/StaySortedApp/" class="btn btn-lg btn-charcoal" target="_blank"><span class="special-tag-for-editing-text-with-html"></span><span class="special-tag-for-editing-text-with-html"></span><span class="fa fa-facebook icon-md"></span></a>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="text-center">
+					<a href="https://twitter.com/Stay_Sorted" class="btn btn-lg btn-charcoal" target="_blank"><span class="fa fa-twitter icon-md"></span></a>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="text-center">
+					<a href="https://www.youtube.com/channel/UC2z-JB_M2_tAxc6MCHQDOVA" class="btn btn-lg btn-charcoal" target="_blank"><span class="fa fa-youtube icon-md icon-white"></span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Footer - bloc-41 END -->
+
+<!-- Footer - bloc-42 -->
+<div class="bloc bgc-charcoal d-bloc" id="bloc-42">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3">
+				<h3 class="mg-md bloc-mob-center-text ">
+					<a class="page-body-text" href="about.html">About</a><br>
+				</h3>
+			</div>
+			<div class="col-sm-3">
+				<h3 class="mg-md bloc-mob-center-text ">
+					<a class="page-body-text" href="contact.html">Contact Us</a><br>
+				</h3>
+			</div>
+			<div class="col-sm-3">
+				<h3 class="mg-md bloc-mob-center-text ">
+					<a class="page-body-text" href="patent.html">Patent</a><br>
+				</h3>
+			</div>
+			<div class="col-sm-3">
+				<h3 class="mg-md bloc-mob-center-text ">
+					<a class="page-body-text" href="terms-and-conditions.html">Terms &amp; Conditions</a><br>
+				</h3>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Footer - bloc-42 END -->
+
+<!-- Footer - bloc-43 -->
+<div class="bloc bgc-charcoal d-bloc" id="bloc-43">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-md-8 col-md-offset-2">
+				<h3 class="statement-bloc-text ">
+					© StaySorted Inc. - 2017
+				</h3>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Footer - bloc-43 END -->
+
+</div>
+<!-- Main container END -->
+    
 
 </body>
 </html>
