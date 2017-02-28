@@ -165,6 +165,32 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 
 /* Bloc text custom styling */
 
+#bloc-2 .hero-image{
+  background-image:url("img/iPhone-7-Jet-Black-vertical.png");
+  background-position: 50%;
+  background-size: 388px 680px;
+  background-repeat: no-repeat;
+  height: 570px;
+}
+#bloc-2 .hero-image .flx-embed{
+  height: 100%;
+}
+#bloc-2 .hero-image .flx-embed-wrapper{
+  position: relative;
+  padding-bottom: 100%;
+  height: 100%;
+  width: 100%;
+}
+#bloc-2 .hero-image iframe{
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  height: 76%;
+}
+#bloc-2 .right{
+  padding-top: 10%;
+}
 #bloc-2 h1{
 	font-family: Nunito;
 	font-weight: 600;
@@ -753,6 +779,12 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 
 /* = Mobile adjustments 
 -------------------------------------------------------------- */
+@media (max-width: 1200px)
+{
+  #bloc-2 .right{
+    padding-top: 15%;
+  }
+}
 @media (max-width: 1024px)
 {
     .bloc{
@@ -784,6 +816,13 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 @media (max-width: 767px)
 {
+    #bloc-2 .hero-image iframe{
+      height: 432px;
+    }
+    #bloc-2 .right{
+      padding-top: 0;
+    }
+
     .page-container{
         overflow-x: hidden;
         position:relative;
@@ -924,6 +963,18 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
     }
 }
 @media (max-width: 420px){
+    #bloc-2 .hero-image{
+      background-image: none;
+      height: 400px;
+    }
+    #bloc-2 .hero-image iframe{
+      top: 0;
+      height: 100%;
+    }
+    #bloc-2 h1 {
+      font-size: 54px;
+    }
+
 	.blocs-mob-center-text{
 	text-align:center;
 }
