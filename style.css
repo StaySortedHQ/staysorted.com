@@ -975,6 +975,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
     #bloc-2 h1 {
       font-size: 54px;
     }
+    #bloc-13 div.text-left{
+      text-align: center;
+    }
 
 	.blocs-mob-center-text{
 	text-align:center;
