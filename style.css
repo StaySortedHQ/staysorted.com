@@ -964,7 +964,8 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 @media (max-width: 420px){
     #bloc-2 .hero-image{
-      background-image: none;
+      background-image: url("./img/Flixel-Still-Image-Mobile-No-Frame.png");
+      background-size: initial;
       height: 400px;
     }
     #bloc-2 .hero-image iframe{
