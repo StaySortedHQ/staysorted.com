@@ -816,11 +816,15 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 @media (max-width: 767px)
 {
+    #bloc-2 .bloc-lg{
+      padding-top: 0;
+    }
     #bloc-2 .hero-image iframe{
       height: 432px;
     }
     #bloc-2 .right{
       padding-top: 0;
+      padding-bottom: 40px;
     }
 
     .page-container{
