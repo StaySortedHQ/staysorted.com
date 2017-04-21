@@ -17,27 +17,7 @@
 	<script src="./js/jqBootstrapValidation.js"></script>
 	<script src="./js/formHandler.js"></script>
 
-	<script type="text/javascript">
-		
-	$.ajax({
-	    url: 'https://freegeoip.net/json/',
-	    type: 'GET',
-	    crossDomain: true,
-	    xhrFields: {
-	    	withCredentials: true
-	    },
-	    success: function(r) {
-	        switch(r.country_code) {
-	            case 'CN':
-	            	console.log('Location is in China')
-	                window.location.href = 'https://dexvitality.github.io/CN';
-	                break;
-	            // add additional cases for other countries
-	        }
-	    }
-	});
 
-	</script>
 
     <title>StaySorted | Sorted 1.5 for iPhone and iPad | Quickly Organise Your Day</title>
 
@@ -46,7 +26,7 @@
   <script src='js/google-analytics.js'></script>
  
 <!-- Google Analytics END -->
-    
+ 
 </head>
 <body>
 <!-- Main container -->
@@ -702,17 +682,19 @@
 
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
-	var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-		(function(){
-			var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-			s1.async=true;
-			s1.src='https://embed.tawk.to/58bd73616b2ec15bd9f6b598/default';
-			s1.charset='UTF-8';
-			s1.setAttribute('crossorigin','*');
-			s0.parentNode.insertBefore(s1,s0);
-	})();
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/58bd73616b2ec15bd9f6b598/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
 </script>
 <!--End of Tawk.to Script-->
+
+
 
 </body>
 </html>
