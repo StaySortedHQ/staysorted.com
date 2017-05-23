@@ -120,3 +120,41 @@ a.floatingButton {
     line-height: 34px;
     text-align: center;
     margin-bottom: 60px; }
+
+.bloc-sm {
+  padding: 20px 50px;
+}
+.bgc-charcoal{
+  background-color:#363C43;
+}
+.btn-charcoal:hover {
+  background: #2b3036;
+  color: #FFFFFF!important;
+}
+.d-bloc h3 a {
+  color: rgba(255,255,255,.7);
+}
+.icon-md {
+  color: rgba(255,255,255,.6);
+  font-size: 30px!important;
+}
+#bloc-42 h3 {
+  font-size: 18px;
+}
+#bloc-42 a:hover {
+  color: rgba(255,255,255,.6);
+  text-decoration: none !important;
+}
+#bloc-43 h3 {
+  color: rgba(255,255,255,.7);
+  font-family: Nunito;
+  font-weight: 200;
+  font-size: 14px;
+}
+.statement-bloc-text {
+  line-height: 38px;
+  font-style: italic;
+  font-size: 28px;
+  text-align: center;
+  font-weight: lighter;
+}
