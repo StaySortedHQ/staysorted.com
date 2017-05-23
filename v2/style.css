@@ -1,0 +1,122 @@
+body {
+  font-family: 21px -apple-system, system-ui, "SF UI Text", Roboto, "Helvetica Neue", sans-serif;
+  color: #303336; }
+
+span.strikethrough {
+  text-decoration: line-through; }
+
+section {
+  padding-top: 80px;
+  padding-bottom: 80px; }
+
+footer {
+  padding-top: 40px;
+  padding-bottom: 20px; }
+
+.blue {
+  background-color: #F2F9FF; }
+
+.heading h1 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 34px;
+  text-align: center;
+  margin-bottom: 36px; }
+.heading p {
+  font-size: 21px;
+  line-height: 30px; }
+
+.subheading {
+  margin-bottom: 16px; }
+  .subheading h1 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px; }
+  .subheading p {
+    font-size: 18;
+    line-height: 24px; }
+
+.phone {
+  width: 335px;
+  height: 625px;
+  background-color: white;
+  margin-top: 30px;
+  margin-bottom: 90px;
+  border-radius: 60px;
+  position: relative;
+  box-shadow: 0 19px 70px rgba(0, 0, 0, 0.22), 0 10px 12px rgba(0, 0, 0, 0.1); }
+  .phone img {
+    margin-top: 50px;
+    margin-left: 20px;
+    width: 295.74px;
+    height: 525px;
+    background-color: black;
+    border-radius: 3px; }
+
+.center {
+  text-align: center; }
+
+a.floatingButton {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  border-radius: 8px;
+  background-color: #3b92e4;
+  padding: 18px 22px;
+  box-shadow: 0 19px 70px rgba(0, 0, 0, 0.12), 0 10px 12px rgba(0, 0, 0, 0.05);
+  -webkit-transition: all 100ms ease-in-out;
+  -ms-transition: all 100ms ease-in-out;
+  -moz-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out; }
+  a.floatingButton:link, a.floatingButton:visited, a.floatingButton:hover, a.floatingButton:active {
+    color: white; }
+  a.floatingButton:hover {
+    background-color: #2E7EE4;
+    -webkit-transform: scale(0.97);
+    -ms-transform: scale(0.97);
+    -moz-transform: scale(0.97);
+    transform: scale(0.97); }
+  a.floatingButton:active {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    transform: scale(0.9); }
+
+#hero {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f4faff+0,e7f3ff+100 */
+  background: #f4faff;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #f4faff 0%, #e7f3ff 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #f4faff 0%, #e7f3ff 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #f4faff 0%, #e7f3ff 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4faff', endColorstr='#e7f3ff',GradientType=0 );
+  /* IE6-9 */
+  height: 420px; }
+  #hero .logo {
+    text-align: center;
+    margin-bottom: 20px; }
+    #hero .logo img {
+      width: 77px;
+      height: 80px; }
+  #hero h1 {
+    font-weight: bold;
+    display: inline;
+    margin: 0; }
+  #hero h2 {
+    color: #3b92e4;
+    display: inline;
+    font-weight: bold;
+    font-size: 22px;
+    margin: 0;
+    padding: 0; }
+    #hero h2 span {
+      color: #ce3011; }
+  #hero p {
+    font-size: 27px;
+    line-height: 34px;
+    text-align: center;
+    margin-bottom: 60px; }
