@@ -1,241 +1,136 @@
-<!doctype html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="apple-itunes-app" content="app-id=1022256487, app-argument=staysorted://x-callback-url/open?item=today">
+    <title>Apple Watch App | Sorted | Master Your Day on iPhone and iPad | Stay Sorted</title>
+    <meta name="keywords" content="task, reminder, calendar, event, productivity, to-do lists, GTD, Sorted, Scheduling, iOS, iPhone">
+    <meta name="description" content="Sorted - Master Your Day. Sorted is a minimalistic, yet awesomely powerful day planner for the productivity obsessed.">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
     <link rel="shortcut icon" type="image/png" href="favicon.png">
-    
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="style.css"><link rel="stylesheet" href="./css/font-awesome.min.css"><link rel="stylesheet" href="./css/feather.min.css"><link href='https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    
-	<script src="./js/jquery-2.1.0.min.js"></script>
-	<script src="./js/bootstrap.min.js"></script>
-	<script src="./js/blocs.min.js"></script>
-    <title>StaySorted | Sorted 1.5 Reminder App for Apple Watch | Quickly Organise Your Day </title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation.min.css"> -->
+    <link rel="stylesheet" href="./css/foundation.css">
+    <link rel="stylesheet" href="./css/style.css">
 
-    
-<!-- Google Analytics -->
-  <script src='js/google-analytics.js'></script>
- 
-<!-- Google Analytics END -->
-    
-</head>
-<body>
-<!-- Main container -->
-<div class="page-container">
-    
-<!-- bloc-0 -->
-<div class="bloc bgc-ghost-white l-bloc" id="bloc-0">
-	<div class="container b-divider">
-		<nav class="navbar nav-invert row">
-			<div class="navbar-header">
-				<a class="navbar-brand" href="http://staysorted.com/"><img src="img/AppIcon.png" alt="logo" srcset="img/AppIcon.png 1x, img/AppIcon@2x.png 2x, img/AppIcon@3x.png 3x" /></a>
-				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
-					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-				</button>
-			</div>
-			<div class="collapse navbar-collapse navbar-1">
-				<ul class="site-navigation nav navbar-nav">
-					<li>
-						<a href="http://staysorted.com/" id="pl-undefined">Sorted</a>
-					</li>
-					<li>
-						<a href="https://medium.com/@StaySorted/sorted-the-todo-app-that-keeps-up-with-you-ios-media-kit-243c7539d6c9#.ixosjynaq" id="pl-undefined" target="_blank">Media Kit</a>
-					</li>
-					<li>
-						<a href="faq.html">FAQ</a>
-					</li>
-					<li>
-						<div class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Features<span class="caret"></span></a>
-							<ul class="dropdown-menu" role="menu">
-								<li>
-									<a href="apple-watch-app.html">Apple Watch</a>
-								</li>
-								<li>
-									<a href="url-scheme.html">URL Scheme</a>
-								</li>
-								<li>
-									<a href="share-extension.html">Share Extension</a>
-								</li>
-								<li>
-									<a href="3d-touch-support.html">3D Touch Support</a>
-								</li>
-							</ul>
-						</div>
-					</li>
-					<li>
-						<a href="https://itunes.apple.com/app/apple-store/id1022256487?pt=2028806&amp;ct=SortedWebsite&amp;mt=8" target="_blank">Download</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-	</div>
-</div>
-<!-- bloc-0 END -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <div class="background">
+      <div class="show-for-small-only row small-logo">
+        <div class="columns center">
+          <img src="images/Icon.png" srcset="images/Icon.png 1x, images/Icon.png 2x" alt="Sorted App Icon">
+        </div>
+      </div>
+      <nav class="row">
+        <div class="columns align-middle">
+          <ul>
+            <li><a href="http://staysorted.com/"><img class="hide-for-small-only" src="images/Icon.png" srcset="images/Icon.png 1x, images/Icon.png 2x" alt="Sorted App Icon"></a></li>
+            <li><a href="http://staysorted.com/" class="selected">SORTED</a></li>
+            <li><a href="https://medium.com/@StaySorted/sorted-the-todo-app-that-keeps-up-with-you-ios-media-kit-243c7539d6c9#.ixosjynaq" target="_blank">PRESS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
 
-<!-- bloc-32 -->
-<div class="bloc bgc-ghost-white tc-charcoal" id="bloc-32">
-	<div class="container bloc-md">
-		<div class="row">
-			<div class="col-sm-6">
-				<div class="center-block blocsapp-device blocsapp-device-watch watch-white">
-					<img src="img/Apple%20Watch%20Main%20Gradient.png" class="img-responsive" />
-				</div>
-			</div>
-			<div class="col-sm-6">
-				<h2 class="mg-lg watch-bloc-text-vc page-title-text tc-charcoal">
-					Sorted Watch App
-				</h2>
-				<p class="mg-lg page-body-text">
-					The Sorted Watch app shows the reminders of the current day.&nbsp; <br> <br>Items can be marked as complete, deleted, or unscheduled.
-				</p><a href="https://itunes.apple.com/app/apple-store/id1022256487?pt=2028806&amp;ct=SortedWebsite&amp;mt=8" target="_blank">
-					<img src="img/App_Store_Badge.svg" height="50" alt="Download on the App Store">
-				</a>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-32 END -->
+    <!--content start-->
+    <section class="row feature align-middle">
+      <div class="small-12 medium-6 columns">
+        <div class="center-block blocsapp-device blocsapp-device-watch watch-white">
+          <img src="images/Apple%20Watch%20Main%20Gradient.png" class="img-responsive" />
+        </div>
+      </div>
+      <div class="small-12 medium-6 columns">
+        <h3>Sorted Watch App</h3>
+        <p>
+          The Sorted Watch app shows the reminders of the current day.&nbsp; <br> <br>Items can be marked as complete, deleted, or unscheduled.
+        </p>
+        <a href="https://itunes.apple.com/app/apple-store/id1022256487?pt=2028806&amp;ct=SortedWebsite&amp;mt=8" target="_blank">
+          <img src="images/Download_on_the_App_Store_Badge_US-UK_135x40.svg" alt="Download on the App Store">
+        </a>
+      </div>
+    </section>
+    <section class="row align-middle">
+      <div class="small-12 medium-12 columns center">
+        <h3 align="center">Sorted Watch App Screenshots</h3>
+      </div>
+      <div class="small-12 medium-4 columns">
+        <div class="center-block blocsapp-device blocsapp-device-watch watch-white">
+          <img src="images/Apple%20Watch%20Main%20Gradient.png" class="img-responsive" />
+        </div>
+      </div>
+      <div class="small-12 medium-4 columns">
+        <div class="center-block blocsapp-device blocsapp-device-watch watch-white">
+          <img src="images/Apple%20Watch%20Complete.png" class="img-responsive" />
+        </div>
+      </div>
+      <div class="small-12 medium-4 columns">
+        <div class="center-block blocsapp-device blocsapp-device-watch watch-white">
+          <img src="images/Apple-Watch-Unschedule-Delete.png" class="img-responsive" />
+        </div>
 
-<!-- bloc-33 -->
-<div class="bloc bgc-ghost-white tc-charcoal" id="bloc-33">
-	<div class="container bloc-sm">
-		<div class="row">
-			<div class="col-sm-12">
-				<p class="text-center page-title-text">
-					Sorted Watch App Screenshots
-				</p>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-33 END -->
+      </div>
+    </section>
+    <!--content end  -->
 
-<!-- Bloc Group -->
-<div class='bloc-group'>
+    <footer class="row">
+      <div class="columns">
+        <div class="row">
+          <div class="columns">
+            <hr/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-4 columns">
+            <ul>
+              <li class="header">Support</li>
+              <li><a href="faq.html">Help</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="patent.html">Patent</a></li>
+              <li><a href="guide.html">Getting stuff done</a></li>
+            </ul>
+          </div>
+          <div class="large-4 columns">
+            <ul>
+              <li class="header">News</li>
+              <li><a href="https://medium.com/@StaySorted" target="_blank">Blog</a></li>
+              <li><a href="https://twitter.com/Stay_Sorted" target="_blank">Twitter</a></li>
+              <li><a href="https://www.facebook.com/StaySortedApp/" target="_blank">Facebook</a></li>
+              <li><a href="https://www.youtube.com/channel/UC2z-JB_M2_tAxc6MCHQDOVA" target="_blank">YouTube</a></li>
+              <li><a href="https://medium.com/@StaySorted/sorted-the-todo-app-that-keeps-up-with-you-ios-media-kit-243c7539d6c9#.ixosjynaq" target="_blank">Press Kit</a></li>
+            </ul>
+          </div>
+          <div class="large-4 columns">
+            <ul>
+              <li class="header">Legal</li>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="terms-and-conditions.html">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-4 large-offset-4 columns center">© StaySorted Inc. - 2017</div>
+        </div>
+      </div>
+    </footer>
 
-<!-- bloc-34 -->
-<div class="bloc bloc-tile-3 bgc-ghost-white l-bloc" id="bloc-34">
-	<div class="container bloc-md">
-		<div class="row">
-			<div class="col-sm-12">
-				<div class="center-block blocsapp-device blocsapp-device-watch watch-white">
-					<img src="img/Apple%20Watch%20Main%20Gradient.png" class="img-responsive" />
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-34 END -->
-
-<!-- bloc-35 -->
-<div class="bloc bloc-tile-3 bgc-ghost-white l-bloc" id="bloc-35">
-	<div class="container bloc-md">
-		<div class="row">
-			<div class="col-sm-12">
-				<div class="center-block blocsapp-device blocsapp-device-watch watch-white">
-					<img src="img/Apple%20Watch%20Complete.png" class="img-responsive" />
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-35 END -->
-
-<!-- bloc-36 -->
-<div class="bloc bloc-tile-3 bgc-ghost-white l-bloc" id="bloc-36">
-	<div class="container bloc-md">
-		<div class="row">
-			<div class="col-sm-12">
-				<div class="center-block blocsapp-device blocsapp-device-watch watch-white">
-					<img src="img/Sorted%20Watch%20Unschedule%20or%20Delete.png" class="img-responsive" />
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-36 END -->
-</div>
-<!-- Bloc Group END -->
-
-<!-- ScrollToTop Button -->
-<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
-<!-- ScrollToTop Button END-->
-
-
-<!-- Footer - bloc-41 -->
-<div class="bloc bgc-charcoal d-bloc" id="bloc-41">
-	<div class="container bloc-sm">
-		<div class="row">
-			<div class="col-sm-4">
-				<div class="text-center">
-					<a href="https://www.facebook.com/StaySortedApp/" class="btn btn-lg btn-charcoal" target="_blank"><span class="special-tag-for-editing-text-with-html"></span><span class="special-tag-for-editing-text-with-html"></span><span class="fa fa-facebook icon-md"></span></a>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="text-center">
-					<a href="https://twitter.com/Stay_Sorted" class="btn btn-lg btn-charcoal" target="_blank"><span class="fa fa-twitter icon-md"></span></a>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="text-center">
-					<a href="https://www.youtube.com/channel/UC2z-JB_M2_tAxc6MCHQDOVA" class="btn btn-lg btn-charcoal" target="_blank"><span class="fa fa-youtube icon-md icon-white"></span></a>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- Footer - bloc-41 END -->
-
-<!-- Footer - bloc-42 -->
-<div class="bloc bgc-charcoal d-bloc" id="bloc-42">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-3">
-				<h3 class="mg-md bloc-mob-center-text ">
-					<a class="page-body-text" href="about.html">About</a><br>
-				</h3>
-			</div>
-			<div class="col-sm-3">
-				<h3 class="mg-md bloc-mob-center-text ">
-					<a class="page-body-text" href="contact.html">Contact Us</a><br>
-				</h3>
-			</div>
-			<div class="col-sm-3">
-				<h3 class="mg-md bloc-mob-center-text ">
-					<a class="page-body-text" href="patent.html">Patent</a><br>
-				</h3>
-			</div>
-			<div class="col-sm-3">
-				<h3 class="mg-md bloc-mob-center-text ">
-					<a class="page-body-text" href="terms-and-conditions.html">Terms &amp; Conditions</a><br>
-				</h3>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- Footer - bloc-42 END -->
-
-<!-- Footer - bloc-43 -->
-<div class="bloc bgc-charcoal d-bloc" id="bloc-43">
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-12 col-md-8 col-md-offset-2">
-				<h3 class="statement-bloc-text ">
-					© StaySorted Inc. - 2017
-				</h3>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- Footer - bloc-43 END -->
-
-</div>
-<!-- Main container END -->
-    
-
-</body>
+    <!-- Google Analytics -->
+    <script src='js/google-analytics.js'></script>
+    <!-- Google Analytics END -->
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+          var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+          s1.async=true;
+          s1.src='https://embed.tawk.to/58bd73616b2ec15bd9f6b598/default';
+          s1.charset='UTF-8';
+          s1.setAttribute('crossorigin','*');
+          s0.parentNode.insertBefore(s1,s0);
+      })();
+    </script>
+    <!--End of Tawk.to Script-->
+  </body>
 </html>

@@ -1,721 +1,348 @@
-<!doctype html>
-<html>
-<head>
-    <meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
     <meta name="apple-itunes-app" content="app-id=1022256487, app-argument=staysorted://x-callback-url/open?item=today">
-    <meta name="keywords" content="productivity, to-do lists, GTD, Sorted, Scheduling, iOS, iPhone">
-    <meta name="description" content="Sorted combines powerful gestures and a slim interface to make quick work of scheduling your tasks.  The Fastest Productivity App on the iOS App Store.">
+    <title>Sorted | Master Your Day on iPhone and iPad | Stay Sorted</title>
+    <meta name="keywords" content="task, reminder, calendar, event, productivity, to-do lists, GTD, Sorted, Scheduling, iOS, iPhone">
+    <meta name="description" content="Sorted - Master Your Day. Sorted is a minimalistic, yet awesomely powerful day planner for the productivity obsessed.">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
     <link rel="shortcut icon" type="image/png" href="favicon.png">
-    
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="style.css"><link rel="stylesheet" href="./css/font-awesome.min.css"><link rel="stylesheet" href="./css/feather.min.css"><link href='https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    
-	<script src="./js/jquery-2.1.0.min.js"></script>
-	<script src="./js/bootstrap.min.js"></script>
-	<script src="./js/blocs.min.js"></script>
-	<script src="./js/jqBootstrapValidation.js"></script>
-	<script src="./js/formHandler.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation.min.css"> -->
+    <link rel="stylesheet" href="./css/foundation.css">
+    <link rel="stylesheet" href="./css/style.css">
 
-	<script type="text/javascript">
-		
-	$.ajax({
-	    url: 'https://freegeoip.net/json/',
-	    type: 'GET',
-	    crossDomain: true,
-	    xhrFields: {
-	    	withCredentials: true
-	    },
-	    success: function(r) {
-	        switch(r.country_code) {
-	            case 'CN':
-	            	console.log('Location is in China')
-	                window.location.href = 'http://staysorted.com/cn';
-	                break;
-	            // add additional cases for other countries
-	        }
-	    }
-	});
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <div class="background">
+      <div class="show-for-small-only row small-logo">
+        <div class="columns center">
+          <img src="images/Icon.png" srcset="images/Icon.png 1x, images/Icon.png 2x" alt="Sorted App Icon">
+        </div>
+      </div>
+      <nav class="row">
+        <div class="columns align-middle">
+          <ul>
+            <li><a href="http://staysorted.com/"><img class="hide-for-small-only" src="images/Icon.png" srcset="images/Icon.png 1x, images/Icon.png 2x" alt="Sorted App Icon"></a></li>
+            <li><a href="http://staysorted.com/" class="selected">SORTED</a></li>
+            <li><a href="https://medium.com/@StaySorted/sorted-the-todo-app-that-keeps-up-with-you-ios-media-kit-243c7539d6c9#.ixosjynaq" target="_blank">PRESS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
 
-	</script>
+    <div class="background">
+      <section class="hero row">
+        <div class="columns">
+          <div class="row">
+            <div class="columns">
+              <h1>Master your day on iPhone and iPad</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-7 medium-8 columns end">
+              <p>Sorted is a minimalistic, yet awesomely powerful day planner for the productivity obsessed.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="columns">
+              <a href="https://itunes.apple.com/app/apple-store/id1022256487?pt=2028806&amp;ct=SortedWebsite&amp;mt=8" target="_blank"><img class="download" src="images/Download_on_the_App_Store_Badge_US-UK_135x40.svg" alt="Download on the App Store"></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
 
-    <title>StaySorted | Sorted 1.5 for iPhone and iPad | Quickly Organise Your Day</title>
+    <section class="video row">
+      <div class="small-12 columns">
+        <div class="responsive-embed">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/rOYNhZRhMIs" frameborder="0" allowfullscreen></iframe>
+          </iframe>
+        </div>
+      </div>
+    </section>
 
-    
-<!-- Google Analytics -->
-  <script src='js/google-analytics.js'></script>
- 
-<!-- Google Analytics END -->
-    
-</head>
-<body>
-<!-- Main container -->
-<div class="page-container">
-    
-<!-- bloc-1 -->
-<div class="bloc bgc-ghost-white l-bloc" id="bloc-1">
-	<div class="container bloc-sm">
-		<nav class="navbar nav-invert row">
-			<div class="navbar-header">
-				<a class="navbar-brand" href="http://staysorted.com/"><img src="img/AppIcon.png" alt="logo" srcset="img/AppIcon.png 1x, img/AppIcon@2x.png 2x, img/AppIcon@3x.png 3x" /></a>
-				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
-					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-				</button>
-			</div>
-			<div class="collapse navbar-collapse navbar-1">
-				<ul class="site-navigation nav navbar-nav">
-					<li>
-						<a href="http://staysorted.com/" id="pl-undefined">Sorted</a>
-					</li>
-					<li>
-						<a href="https://medium.com/@StaySorted/sorted-the-todo-app-that-keeps-up-with-you-ios-media-kit-243c7539d6c9#.ixosjynaq" id="pl-undefined" target="_blank">Media Kit</a>
-					</li>
-					<li>
-						<a href="faq.html">FAQ</a>
-					</li>
-					<li>
-						<div class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Features<span class="caret"></span></a>
-							<ul class="dropdown-menu" role="menu">
-								<li>
-									<a href="apple-watch-app.html">Apple Watch</a>
-								</li>
-								<li>
-									<a href="url-scheme.html">URL Scheme</a>
-								</li>
-								<li>
-									<a href="share-extension.html">Share Extension</a>
-								</li>
-								<li>
-									<a href="3d-touch-support.html">3D Touch Support</a>
-								</li>
-							</ul>
-						</div>
-					</li>
-					<li>
-						<a href="https://itunes.apple.com/app/apple-store/id1022256487?pt=2028806&amp;ct=SortedWebsite&amp;mt=8" target="_blank">Download</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-	</div>
-</div>
-<!-- bloc-1 END -->
+    <div class="background">
+      <header class="row">
+        <div class="columns">
+          <h2><img class="hide-for-small-only" src="images/Sunglasses.png" srcset="images/Sunglasses.png 1x, images/Sunglasses@2x.png 2x" alt="sunglasses"> Sorted at a glance</h2>
+          <hr/>
+        </div>
+      </header>
+    </div>
 
-<!-- bloc-2 -->
-<div class="bloc tc-charcoal bgc-ghost-white " id="bloc-2">
-	<div class="container bloc-lg">
-		<div class="row">
-			<div class="col-lg-5 col-sm-6 right visible-xs-block">
-				<h1 class=" text-center mg-sm tc-charcoal">
-					Sorted for iOS
-				</h1>
-				<h4 class=" text-center mg-lg tc-charcoal">
-					Quickly Organise Your Day
-				</h4>
-				<p class="text-center  mg-lg">
-					<span>Sorted combines powerful gestures and a slim interface to make quick work of scheduling your tasks.</span>
-				</p>
-				<div class="text-center">
-					<a href="https://itunes.apple.com/app/apple-store/id1022256487?pt=2028806&amp;ct=SortedWebsite&amp;mt=8" target="_blank">
-						<img src="img/App_Store_Badge.svg" height="50" alt="Download on the App Store">
-					</a>
-				</div>
-			</div>
-			<div class="col-lg-offset-1 col-lg-5 col-sm-6 text-center hero-image">
-				<div class="flx-embed">
-					<div class="flx-embed-wrapper">
-						<iframe src="https://media.flixel.com/cinemagraph/g78qdfaznew8lk3uchr6?hd=true&forceGif=true" frameborder="0" allowfullscreen></iframe>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-5 col-sm-6 right hidden-xs">
-				<h1 class=" text-center mg-sm tc-charcoal">
-					Sorted for iOS
-				</h1>
-				<h4 class=" text-center mg-lg tc-charcoal">
-					Quickly Organise Your Day
-				</h4>
-				<p class="text-center  mg-lg">
-					<span>Sorted combines powerful gestures and a slim interface to make quick work of scheduling your tasks.</span>
-				</p>
-				<div class="text-center">
-					<a href="https://itunes.apple.com/app/apple-store/id1022256487?pt=2028806&amp;ct=SortedWebsite&amp;mt=8" target="_blank">
-						<img src="img/App_Store_Badge.svg" height="50" alt="Download on the App Store">
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-2 END -->
+    <div class="background">
+      <section class="row feature align-middle">
+        <div class="small-12 medium-6 columns description">
+          <h3><img src="images/Inbox.png" srcset="images/Inbox.png 1x, images/Inbox@2x.png 2x" alt="Inbox"> Store and organise</h3>
+          <p>Brain dump your tasks and ideas into the Inbox to quickly clear your mind. When you have time, move and organise them into separate lists one by one or in batches.</p>
+          <p>You can use lists for complex projects or something as simple as a groceries list.</p>
+          <p>When you are ready to schedule your tasks, simply select and tap the calendar. It's that quick and easy.</p>
+        </div>
+        <div class="small-12 medium-6 columns">
+          <div class="iPhoneVideo">
+            <img src="images/iPhoneBorder.png" srcset="images/iPhoneBorder.png 1x, images/iPhoneBorder@2x.png 2x" alt="iPhone" class="phone">
+            <video loop src="videos/01-StoreAndOrganise.mp4"  poster="images/01-StoreAndOrganise.png"></video>
+          </div>
+        </div>
+      </section>
+    </div>
 
-<!-- bloc-3 -->
-<div class="bloc tc-charcoal hidden-xs object-hidden hidden-sm hidden-lg hidden-md bgc-ghost-white" id="bloc-3">
-	<div class="container bloc-lg">
-		<div class="row">
-			<div class="col-sm-8">
-				<div class="embed-responsive embed-responsive-16by9">
-					<video controls class="embed-responsive-item">
-						<source src="vid/video-placeholder.mp4" type="video/mp4" />Your browser does not support HTML5 video.
-					</video>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<h1 class=" text-center mg-sm tc-charcoal">
-					Sorted for iOS
-				</h1>
-				<h4 class=" text-center mg-lg tc-charcoal">
-					Quickly Organise Your Day
-				</h4>
-				<p class="text-center  mg-lg">
-					<span>Sorted combines powerful gestures and a slim interface to make quick work of scheduling your tasks.</span>
-				</p>
-				<div class="text-center">
-					<a href="https://itunes.apple.com/app/apple-store/id1022256487?pt=2028806&amp;ct=SortedWebsite&amp;mt=8" class="btn btn-lg btn-charcoal" target="_blank"><span class="fa fa-apple icon-spacer icon-white"></span>Download</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-3 END -->
+    <div class="background">
+      <section class="row feature align-middle">
+        <div class="small-12 medium-6 columns description">
+          <h3><img src="images/Checkbox.png" srcset="images/Checkbox.png 1x, images/Checkbox@2x.png 2x" alt="Checkbox"> Plan and execute</h3>
+          <p>We've designed Sorted to make planning super quick. When planning a schedule is this easy and dare we say fun, there is no reason to skip this important step.</p>
+          <p>Schedule multiple tasks with our time ruler, multi-select and pinch gestures. It's quick and painless to come up with a plan you can execute in seconds.</p>
+          <p><a href="guide.html">Why should you schedule your tasks?</a></p>
+        </div>
+        <div class="small-12 medium-6 columns">
+          <div class="iPhoneVideo">
+            <img src="images/iPhoneBorder.png" srcset="images/iPhoneBorder.png 1x, images/iPhoneBorder@2x.png 2x" alt="iPhone" class="phone">
+            <video loop src="videos/02-PlanAndExecute.mp4" poster="images/02-PlanAndExecute.png"></video>
+          </div>
+        </div>
+      </section>
+    </div>
 
-<!-- bloc-4 -->
-<div class="bloc bgc-ghost-white l-bloc media-border" id="bloc-4">
-	<div class="container bloc-sm">
-		<div class="row">
-			<div class="col-sm-4">
-				<a href="http://techcrunch.com/2016/04/14/sorted-offers-a-new-take-on-the-standard-to-do-list-app/" target='_blank'>
-					<img src="img/techcrunch.png" class="center-block img-responsive" />
-				</a>
-			</div>
-			<div class="col-sm-4">
-				<a href="http://lifehacker.com/sorted-for-ios-makes-task-management-simple-and-fast-1778787438" target='_blank'>
-					<img src="img/LifeHacker.png" class="center-block img-responsive" />
-				</a>
-			</div>
-			<div class="col-sm-4">
-				<a href="http://www.scmp.com/tech/apps-gaming/article/1937349/how-task-app-all-you-need-get-sorted" target='_blank'>
-					<img src="img/SCMP.png" class="img-responsive center-block" />
-				</a>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-4 END -->
+    <div class="background">
+      <section class="row feature align-middle">
+        <div class="small-12 medium-6 columns description">
+          <h3><img src="images/Stopwatch.png" srcset="images/Stopwatch.png 1x, images/Stopwatch@2x.png 2x" alt="Stopwatch"> Instant feedback</h3>
+          <p>Things don't always go according to plan. Especially in our modern connected life.</p>
+          <p>Sorted makes it easy to get instant feedback to changes in your schedule without having you jump through hoops.</p>
+          <p>Easily maintain perspective on your schedule, gain better insight on your time and master even your most hectic days.</p>
+        </div>
+        <div class="small-12 medium-6 columns">
+          <div class="iPhoneVideo">
+            <img src="images/iPhoneBorder.png" srcset="images/iPhoneBorder.png 1x, images/iPhoneBorder@2x.png 2x" alt="iPhone" class="phone">
+            <video loop src="videos/03-InstantFeedback.mp4" poster="images/03-InstantFeedback.png"></video>
+          </div>
+        </div>
+      </section>
+    </div>
 
-<!-- bloc-5 -->
-<div class="bloc tc-charcoal bgc-ghost-white" id="bloc-5">
-	<div class="container b-divider bloc-lg">
-		<div class="row">
-			<div class="col-xs-12 col-md-8 col-md-offset-2">
-				<h3 class="statement-bloc-text mg-md  tc-charcoal">
-					“<strong>To do lists don&rsquo;t work</strong> because they don&rsquo;t account for <strong>time</strong>. Instead, <strong>schedule</strong> everything, because that which is scheduled actually gets <strong>done.</strong>"
-				</h3>
-				<p class="text-center">
-					<strong>Kevin Kruse - Article in Forbes &amp; Fast Company</strong>
-				</p>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-5 END -->
+    <!-- <div class="background"> -->
+      <header class="row">
+        <div class="columns">
+            <h2><img class="hide-for-small-only" src="images/GiftBox.png" srcset="images/GiftBox.png 1x, images/GiftBox@2x.png 2x" alt="GiftBox"> Packed with useful features</h2>
+            <hr/>
+        </div>
+      </header>
+    <!-- </div> -->
 
-<!-- bloc-6 -->
-<div class="bloc tc-charcoal bgc-ghost-white" id="bloc-6">
-	<div class="container bloc-md">
-		<div class="row">
-			<div class="col-sm-12">
-				<h2 class="mg-md text-center  tc-charcoal">
-					Sorted makes it fast and easy for you to...
-				</h2>
-			</div>
-		</div>
-		<div class="row voffset">
-			<div class="col-sm-6">
-				<div class="text-center">
-					<span class="fa fa-sun-o icon-lg icon-charcoal"></span>
-				</div>
-				
-				<h3 class="mg-md text-center  tc-charcoal">
-					Hit the day running
-				</h3>
-				<p class="text-center ">
-					Sorted makes this easier by simplifying the process and making it super fast. With Sorted you can have a schedule ready in little more than 10 seconds.<br>
-				</p>
-			</div>
-			<div class="col-sm-6">
-				<div class="text-center">
-					<span class="feather-icon icon-clock icon-lg icon-charcoal"></span>
-				</div>
-				
-				<h3 class="mg-md  text-center tc-charcoal">
-					Make better decisions about time
-				</h3>
-				<p class="feature-Image-Size text-center ">
-					If your plan changes drastically, an up-to-date schedule will help you make better decisions on what to change and how to reprioritise.<br>
-				</p>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-6 END -->
+    <!-- <div class="background"> -->
+      <section class="row feature align-middle">
+        <div class="small-12 medium-6 columns description">
+          <h3><img src="images/Calendar.png" srcset="images/Calendar.png 1x, images/Calendar@2x.png 2x" alt="Calendar"> Calendar Integration</h3>
+          <p>Schedule your tasks around your calendar events in one unified and highly interactive list.</p>
+          <p>Tap on a calendar event and see the necessary details without jumping to another app.</p>
+          <p>Calendar events remain in sync with Apple Calendar and whatever calendar source you have setup. Be it Google calendars or iCloud.</p>
+        </div>
+        <div class="small-12 medium-6 columns">
+          <div class="iPhoneVideo">
+            <img src="images/iPhoneBorder.png" srcset="images/iPhoneBorder.png 1x, images/iPhoneBorder@2x.png 2x" alt="iPhone" class="phone">
+            <video loop src="videos/04-CalendarIntegration.mp4" poster="images/04-CalendarIntegration.png"></video>
+          </div>
+        </div>
+      </section>
+    <!-- </div> -->
 
-<!-- bloc-7 -->
-<div class="bloc bgc-ghost-white l-bloc" id="bloc-7">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-12">
-				<h3 class="mg-md text-center  tc-charcoal">
-					See Sorted in Action
-				</h3>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-7 END -->
+    <!-- <div class="background"> -->
+      <section class="row feature align-middle">
+        <div class="small-12 medium-6 columns description">
+          <h3><img src="images/Siri.png" srcset="images/Siri.png 1x, images/Siri@2x.png 2x" alt="Siri"> Siri Integration</h3>
+          <p>Sorted integrates with Siri through our Reminder Capture feature.</p>
+          <p>Turn on Reminder Capture, then pick among the lists available in Apple Reminders and Sorted will do the rest.</p>
+          <p>* Sorted will pull in and remove the items from any Apple Reminder lists you specify.</p>
+        </div>
+        <div class="small-12 medium-6 columns">
+          <div class="iPhoneVideo">
+            <img src="images/iPhoneBorder.png" srcset="images/iPhoneBorder.png 1x, images/iPhoneBorder@2x.png 2x" alt="iPhone" class="phone">
+            <video loop src="videos/05-SiriIntegration.mp4" poster="images/05-SiriIntegration.png"></video>
+          </div>
+        </div>
+      </section>
+    <!-- </div> -->
 
-<!-- bloc-8 -->
-<div class="bloc bgc-ghost-white l-bloc" id="bloc-8">
-	<div class="container bloc-sm">
-		<div class="row">
-			<div class="col-sm-6">
-				<div class="embed-responsive embed-responsive-16by9">
-					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/P3BCZNVpc4k?ecver=2" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
-					</iframe>
-				</div>
-			</div>
-			<div class="col-sm-6">
-				<div class="embed-responsive embed-responsive-16by9">
-					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/rOYNhZRhMIs?ecver=2" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
-					</iframe>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-8 END -->
+    <!-- <div class="background"> -->
+      <section class="row feature align-middle">
+        <div class="small-12 medium-6 columns description">
+          <h3><img src="images/Flag.png" srcset="images/Flag.png 1x, images/Flag@2x.png 2x" alt="Flag"> Emoji Flags</h3>
+          <p>Use emoji flags as a fun way to add priority and context to your tasks.</p>
+          <p>You can customise the emojis at your disposal within Sorted's settings and adapt to your work style and needs.</p>
+          <p>Use 🏡 for tasks at home or 💼 for tasks at the office.</p>
+          <p>Use ❗ to mark priority or ⭐️ to mark the top three must complete tasks for your day.</p>
+        </div>
+        <div class="small-12 medium-6 columns">
+          <div class="iPhoneVideo">
+            <img src="images/iPhoneBorder.png" srcset="images/iPhoneBorder.png 1x, images/iPhoneBorder@2x.png 2x" alt="iPhone" class="phone">
+            <video loop src="videos/06-EmojiFlags.mp4" poster="images/06-EmojiFlags.png"></video>
+          </div>
+        </div>
+      </section>
+    <!-- </div> -->
 
-<!-- bloc-9 -->
-<div class="bloc bgc-ghost-white l-bloc" id="bloc-9">
-	<div class="container bloc-md">
-		<div class="row">
-			<div class="col-sm-12">
-				<div class="text-center">
-					<a href="https://itunes.apple.com/app/apple-store/id1022256487?pt=2028806&amp;ct=SortedWebsite&amp;mt=8" target="_blank">
-						<img src="img/App_Store_Badge.svg" height="50" alt="Download on the App Store">
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-9 END -->
+    <!-- <div class="background"> -->
+      <section class="row feature align-middle">
+        <div class="small-12 medium-6 columns description">
+          <h3><img src="images/Repeat.png" srcset="images/Repeat.png 1x, images/Repeat@2x.png" alt="Repeat Icon"> Repeating Tasks</h3>
+          <p>Handle repetitive tasks like a pro. By choosing from a list of useful predefined settings or go crazy with our powerful custom repeat options.</p>
+          <p>Whether you want to remind yourself to pay your bills or need something much more complex, you'll find something to meet your needs.</p>
+        </div>
+        <div class="small-12 medium-6 columns">
+          <div class="iPhoneVideo">
+            <img src="images/iPhoneBorder.png" srcset="images/iPhoneBorder.png 1x, images/iPhoneBorder@2x.png 2x" alt="iPhone" class="phone">
+            <video loop src="videos/07-RepeatingTasks.mp4" poster="images/07-RepeatingTasks.png"></video>
+          </div>
+        </div>
+      </section>
+    <!-- </div> -->
 
-<!-- bloc-10 -->
-<div class="bloc tc-charcoal bgc-ghost-white" id="bloc-10">
-	<div class="container bloc-md">
-		<div class="row">
-			<div class="col-sm-12">
-				<h3 class="mg-md text-center  tc-charcoal">
-					Here is what our users have to say...
-				</h3>
-			</div>
-		</div>
-		<div class="row voffset">
-			<div class="col-sm-4">
-				<p class="text-center statement-bloc-text ">
-					"Really enjoying all the thought and care that was put into ... this app. Multi-item select and quick rescheduling ... are particularly stand-out features."
-				</p>
-				<p class="text-center ">
-					<strong>Yev</strong><br>
-				</p>
-			</div>
-			<div class="col-sm-4">
-				<p class="text-center statement-bloc-text  quotes-1">
-					"I have used everything from Todoist, Toodledo, Trello, Omniplanner to Wunderlist… Sorted is finally the answer that makes a busy &amp; changing schedule manageable with a beautiful UI"
-				</p>
-				<p class="text-center ">
-					<strong>KingOfZombies</strong><br>
-				</p>
-			</div>
-			<div class="col-sm-4">
-				<p class="text-center statement-bloc-text ">
-					"I am loving this app and how interactive it is. It&rsquo;s beautiful with great options to save and change tasks quickly."
-				</p>
-				<p class="text-center ">
-					<strong>Elan</strong>
-				</p>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-10 END -->
+    <!-- <div class="background"> -->
+      <section class="row feature align-middle">
+        <div class="small-12 medium-6 columns description">
+          <h3><img src="images/Clipboard.png" srcset="images/Clipboard.png 1x, images/Clipboard@2x.png" alt="Clipboard"> Lists and Schedule</h3>
+          <p>Jump between list mode and your schedule anytime you want. All without losing your place.</p>
+          <p>We've designed Sorted minus deeply nested navigation. So you can quickly access all the right information quickly.</p>
+        </div>
+        <div class="small-12 medium-6 columns">
+          <div class="iPhoneVideo">
+            <img src="images/iPhoneBorder.png" srcset="images/iPhoneBorder.png 1x, images/iPhoneBorder@2x.png 2x" alt="iPhone" class="phone">
+            <video loop src="videos/08-ListsAndSchedule.mp4" poster="images/08-ListsAndSchedule.png"></video>
+          </div>
+        </div>
+      </section>
+    <!-- </div> -->
 
-<!-- bloc-11 -->
-<div class="bloc tc-charcoal bgc-ghost-white" id="bloc-11">
-	<div class="container bloc-md">
-		<div class="row">
-			<div class="col-sm-12">
-				<h2 class="text-center mg-md  tc-charcoal">
-					See Sorted in more detail
-				</h2>
-			</div>
-		</div>
-		<div class="row voffset">
-			<div class="col-sm-3">
-				<div class="embed-responsive embed-responsive-16by9">
-					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xmJEi-A508k?rel=0&amp;showinfo=0?ecver=2" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
-					</iframe>
-				</div>
-				<h3 class=" text-center mg-sm tc-charcoal">
-					Add tasks
-				</h3>
-				<p class="text-center ">
-					Add tasks quickly with simple gestures.
-				</p>
-			</div>
-			<div class="col-sm-3">
-				<div class="embed-responsive embed-responsive-16by9">
-					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/kR_YvWWrdX8?rel=0&amp;showinfo=0?ecver=2" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
-					</iframe>
-				</div>
-				<h3 class=" text-center mg-sm tc-charcoal">
-					Set time
-				</h3>
-				<p class="text-center ">
-					Using our unique time ruler. Scroll in increments of 5 minutes or 1 hour.
-				</p>
-			</div>
-			<div class="col-sm-3">
-				<div class="embed-responsive embed-responsive-16by9">
-					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/PaO1fov1n_8?rel=0&amp;showinfo=0?ecver=2" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
-					</iframe>
-				</div>
-				<h3 class=" text-center mg-sm tc-charcoal">
-					Change dates
-				</h3>
-				<p class="text-center ">
-					Move tasks to different dates with a tap.
-				</p>
-			</div>
-			<div class="col-sm-3">
-				<div class="embed-responsive embed-responsive-16by9">
-					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hTrI6dAzCNo?rel=0&amp;showinfo=0?ecver=2" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
-					</iframe>
-				</div>
-				<h3 class=" text-center mg-sm tc-charcoal">
-					Label tasks
-				</h3>
-				<p class="text-center ">
-					Add labels to your tasks and turn them into lists.
-				</p>
-			</div>
-		</div>
-		<div class="row voffset">
-			<div class="col-sm-3">
-				<div class="embed-responsive embed-responsive-16by9">
-					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/LlBzxLe7yag?rel=0&amp;showinfo=0?ecver=2" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
-					</iframe>
-				</div>
-				<h3 class=" text-center mg-sm tc-charcoal">
-					Schedule tasks from list
-				</h3>
-				<p class="text-center ">
-					Easily schedule tasks from your list or unschedule them if you like
-				</p>
-			</div>
-			<div class="col-sm-3">
-				<div class="embed-responsive embed-responsive-16by9">
-					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/LPjrfJawEYU?rel=0&amp;showinfo=0?ecver=2" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
-					</iframe>
-				</div>
-				<h3 class=" text-center mg-sm tc-charcoal">
-					Repeating tasks
-				</h3>
-				<p class="text-center ">
-					Create preset recurring tasks or go crazy with powerful custom repeat rules
-				</p>
-			</div>
-			<div class="col-sm-3">
-				<div class="embed-responsive embed-responsive-16by9">
-					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mqE-kO48qy4?rel=0&amp;showinfo=0?ecver=2" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
-					</iframe>
-				</div>
-				<h3 class=" text-center mg-sm tc-charcoal">
-					Spread out tasks
-				</h3>
-				<p class="text-center ">
-					Pinch or spread out tasks evenly in time to give your schedule a start.
-				</p>
-			</div>
-			<div class="col-sm-3">
-				<div class="embed-responsive embed-responsive-16by9">
-					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/KebETZrZreA?rel=0&amp;showinfo=0?ecver=2" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
-					</iframe>
-				</div>
-				<h3 class=" text-center mg-sm tc-charcoal">
-					Checkboxes
-				</h3>
-				<p class="text-center ">
-					Create checklists for subtasks with a simple swipe.
-				</p>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-11 END -->
+    <!-- <div class="background"> -->
+      <section class="row feature align-middle">
+        <div class="small-12 medium-6 columns description">
+          <h3><img src="images/Touch.png" srcset="images/Touch.png 1x, images/Touch@2x.png" alt="Hand"> 3D Touch</h3>
+          <p>For iOS devices that supports 3D touch, hard press a task and find additional shortcuts to make quick work of scheduling your tasks and organising your lists.</p>
+          <p>Quickly move items to the top or bottom of any list or throw them to the next or previous day with a press and a swipe.</p>
+          <p><a href="3d-touch-support.html">See 3D Touch in action</a></p>
+        </div>
+        <div class="small-12 medium-6 columns">
+          <div class="iPhoneVideo">
+            <img src="images/iPhoneBorder.png" srcset="images/iPhoneBorder.png 1x, images/iPhoneBorder@2x.png 2x" alt="iPhone" class="phone">
+            <video loop src="videos/09-3DTouch.mp4" poster="images/09-3DTouch.png"></video>
+          </div>
+        </div>
+      </section>
+    <!-- </div> -->
 
+    <!-- <div class="background"> -->
+      <section class="row feature align-middle">
+        <div class="small-12 medium-6 columns description">
+          <h3><img src="images/AlarmClock.png" srcset="images/AlarmClock.png 1x, images/AlarmClock@2x.png" alt="Alarm Clock"> Auto-Snooze</h3>
+          <p>For those who tend to miss notifications. We have something for you too.</p>
+          <p>Turn on auto-snooze and pick a duration. Sorted will then repeat any notifications you've missed at least five times or until you handle them.</p>
+          <p>Helping to ensure you never miss an important task notification.</p>
+        </div>
+        <div class="small-12 medium-6 columns">
+          <div class="iPhoneVideo">
+            <img src="images/iPhoneBorder.png" srcset="images/iPhoneBorder.png 1x, images/iPhoneBorder@2x.png 2x" alt="iPhone" class="phone">
+            <img src="images/Autosnooze.png" srcset="images/Autosnooze.png 1x, images/Autosnooze@2x.png 2x" alt="auto-snooze settings" class="screen">
+          </div>
+        </div>
+      </section>
+    <!-- </div> -->
 
-<!-- bloc-12 -->
-<div class="bloc tc-charcoal hidden-lg hidden-md hidden-sm hidden-xs object-hidden bgc-ghost-white" id="bloc-12">
-	<div class="container bloc-md">
-		<div class="row">
-			<div class="col-sm-6">
-				<img src="img/ThemeGrid.png" class="img-responsive" />
-			</div>
-			<div class="col-sm-6">
-				<h2 class="mg-md  tc-charcoal">
-					Power and Beauty
-				</h2>
-				<p class="text-left ">
-					Disctracion-free User Interface.<br> <br>Customize Sorted with different themes.&nbsp; <br><br>
-				</p>
-				<h3 class="mg-md ">
-					Learn More About Sorted <br>
-				</h3><a href="url-scheme.html" class="btn btn-lg btn-ball-blue">URL Scheme</a><a href="https://www.youtube.com/watch?v=QsKOYAE8bDs" class="btn btn-lg btn-ball-blue" target="_blank">Share Extension</a><a href="https://www.youtube.com/watch?v=FAyHNqZFw_k" class="btn btn-lg btn-ball-blue" target="_blank">3D Touch Shortcuts</a>
-				<h3 class="mg-md ">
-					<br>
-				</h3>
-				<h3 class="mg-md ">
-					Check Out Our YouTube Channel&nbsp;
-				</h3>
-				<p>
-					Learn more with our Tutorials on how to use Sorted.&nbsp;See the basics of setting up routines to create habits to improve your productivity. <br><br>
-				</p><a href="https://www.youtube.com/playlist?list=PLtXguq3_JUjzXSNlWpfLEJbDAGBKSECRw" class="btn btn-lg btn-ball-blue" target="_blank">Tutorials</a><a href="https://www.youtube.com/playlist?list=PLtXguq3_JUjx5OzKe43-ugxTmyiISA_fQ" class="btn btn-lg btn-ball-blue" target="_blank">Routines</a>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-12 END -->
+    <section class="row feature">
+      <div class="columns description">
+        <div class="row">
+          <div class="columns">
+            <h3><img src="images/Gem.png" srcset="images/Gem.png 1x, images/Gem@2x.png" alt="Gem Stone"> And more...</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-12 medium-6 columns">
+            <ul>
+              <li>Daily Log</li>
+              <li>Checkboxes</li>
+              <li>Early Alerts</li>
+              <li>Share Menu</li>
+              <li>Tappable Links</li>
+              <li>Passcode Protection</li>
+              <li>iCloud Sync</li>
+            </ul>
+          </div>
+          <div class="small-12 medium-6 columns">
+            <ul>
+              <li>Haptic Feedback</li>
+              <li><a href="3d-touch-support.html">3D Touch Support</a></li>
+              <li><a href="share-extension.html">Share Extension</a></li>
+              <li><a href="url-scheme.html">URL Scheme</a></li>
+              <li><a href="apple-watch-app.html">Apple Watch</a></li>
+              <li>Themes and matching app icon</li>
+              <li>More to come ...</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<!-- bloc-13 -->
-<div class="bloc bgc-ghost-white l-bloc tc-charcoal" id="bloc-13">
-	<div class="container bloc-md">
-		<div class="row">
-			<div class="col-sm-6">
-				<img src="img/Angle_Themes_White_Version.jpg" class="img-responsive" />
-			</div>
-			<div class="col-sm-6">
-				<h2 class="mg-md  tc-charcoal">
-					Power and Beauty
-				</h2>
-				<p class="text-left ">
-					Sorted is more than just a pretty face.<br><br>
-					*&nbsp;<a href="share-extension.html">Share Extension</a> &nbsp;- send links and text to revisit later <br>
-					*&nbsp;Checkboxes - for subtasks&nbsp;<br>
-					*&nbsp;<a href="3d-touch-support.html">3D Touch</a>&nbsp;- commands to push tasks around <br>* Auto Snooze -&nbsp;reminders that nag at you until you handle them&nbsp;<br>
-					*&nbsp;<a href="https://www.youtube.com/watch?v=Bwh04FcdM3A" target="_blank">Capture Reminders</a>&nbsp;- from Siri&nbsp;and Apple Reminders<br>
-					*&nbsp;<a href="url-scheme.html">URL Scheme</a>&nbsp;- makes working with other apps and services easy&nbsp;<br>
-					*&nbsp;<a href="apple-watch-app.html">Apple Watch</a>&nbsp;- with full set of complications <br>
-					* Search&nbsp;- both in-app and through Core-Spotlight<br>
-					* Sound FX and Themes&nbsp;- to match your style<br>
-				</p>
-				<div class="spacer">
-				</div>
-				<div class="row">
-					<div class="col-sm-12">
-						<div class="text-left">
-							<a href="https://itunes.apple.com/app/apple-store/id1022256487?pt=2028806&amp;ct=SortedWebsite&amp;mt=8" target="_blank">
-								<img src="img/App_Store_Badge.svg" height="50" alt="Download on the App Store">
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-13 END -->
+    <footer class="row">
+      <div class="columns">
+        <div class="row">
+          <div class="columns">
+            <hr/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-4 columns">
+            <ul>
+              <li class="header">Support</li>
+              <li><a href="faq.html">Help</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="patent.html">Patent</a></li>
+              <li><a href="guide.html">Getting stuff done</a></li>
+            </ul>
+          </div>
+          <div class="large-4 columns">
+            <ul>
+              <li class="header">News</li>
+              <li><a href="https://medium.com/@StaySorted" target="_blank">Blog</a></li>
+              <li><a href="https://twitter.com/Stay_Sorted" target="_blank">Twitter</a></li>
+              <li><a href="https://www.facebook.com/StaySortedApp/" target="_blank">Facebook</a></li>
+              <li><a href="https://www.youtube.com/channel/UC2z-JB_M2_tAxc6MCHQDOVA" target="_blank">YouTube</a></li>
+              <li><a href="https://medium.com/@StaySorted/sorted-the-todo-app-that-keeps-up-with-you-ios-media-kit-243c7539d6c9#.ixosjynaq" target="_blank">Press Kit</a></li>
+            </ul>
+          </div>
+          <div class="large-4 columns">
+            <ul>
+              <li class="header">Legal</li>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="terms-and-conditions.html">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-4 large-offset-4 columns center">© StaySorted Inc. - 2017</div>
+        </div>
+      </div>
+    </footer>
 
-<!-- bloc-14 -->
-<div class="bloc object-hidden bgc-ghost-white l-bloc hidden-xs hidden-sm hidden-lg hidden-md" id="bloc-14">
-	<div class="container bloc-md">
-		<div class="row">
-			<div class="col-sm-12">
-				<h2 class="text-center mg-md">
-					More Sorted Features and Resources
-				</h2>
-			</div>
-		</div>
-		<div class="row voffset">
-			<div class="col-sm-3">
-				<h3 class="mg-md text-center">
-					URL Scheme
-				</h3>
-				<p class="text-center">
-					Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.
-				</p>
-				<div class="text-center">
-					<a href="index.html" class="btn btn-d btn-lg">Learn More<span class="special-tag-for-editing-text-with-html"></span></a>
-				</div>
-			</div>
-			<div class="col-sm-3">
-				<h3 class="mg-md text-center">
-					Share Extension
-				</h3>
-				<p class="text-center">
-					Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.
-				</p>
-				<div class="text-center">
-					<a href="index.html" class="btn btn-d btn-lg">Learn More</a>
-				</div>
-			</div>
-			<div class="col-sm-3">
-				<h3 class="mg-md text-center">
-					Tutorials
-				</h3>
-				<p class="text-center">
-					Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.
-				</p>
-				<div class="text-center">
-					<a href="index.html" class="btn btn-lg btn-d"><span class="fa fa-youtube icon-md"></span></a>
-				</div>
-			</div>
-			<div class="col-sm-3">
-				<h3 class="mg-md text-center">
-					Routines
-				</h3>
-				<p class="text-center">
-					Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.
-				</p>
-				<div class="text-center">
-					<a href="index.html" class="btn btn-lg btn-d"><span class="fa fa-youtube icon-md"></span></a>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-14 END -->
-
-<!-- bloc-15 -->
-<div class="bloc tc-charcoal bgc-ghost-white" id="bloc-15">
-	<div class="container bloc-md">
-		<div class="row">
-			<div class="col-sm-6">
-				<div class="center-block blocsapp-device blocsapp-device-mb mb-space-grey">
-					<img src="img/Screenshot%202017-02-17%2008.36.13.jpg" class="img-responsive" />
-				</div>
-			</div>
-			<div class="col-sm-6">
-				<h2 class="mg-lg mb-bloc-text-vc  tc-charcoal">
-					Want to try Sorted for macOS?
-				</h2>
-				<p class="mg-lg">
-					Sign up here to gain access to our Sorted for macOS public beta and Slack channel.
-				</p>
-				<form action="//staysorted.us13.list-manage.com/subscribe/post?u=33a5f71a95b2f144587c73783&amp;id=a1274cae25" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" method="post" target="_blank" id="form_44311" novalidate>
-					<div class="input-group">
-						<input class="form-control" placeholder="your@email.com" required type="email" id="mce-EMAIL" name="EMAIL" type="email" />
-						<span class="input-group-btn">
-							<input class="submit-button btn btn-charcoal" type="submit" value="Join" name="Join">
-						</span>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-15 END -->
-
-<!-- ScrollToTop Button -->
-<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
-<!-- ScrollToTop Button END-->
-
-
-<!-- Footer - bloc-41 -->
-<div class="bloc bgc-charcoal d-bloc" id="bloc-41">
-	<div class="container bloc-sm">
-		<div class="row">
-			<div class="col-sm-4">
-				<div class="text-center">
-					<a href="https://www.facebook.com/StaySortedApp/" class="btn btn-lg btn-charcoal" target="_blank"><span class="special-tag-for-editing-text-with-html"></span><span class="special-tag-for-editing-text-with-html"></span><span class="fa fa-facebook icon-md"></span></a>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="text-center">
-					<a href="https://twitter.com/Stay_Sorted" class="btn btn-lg btn-charcoal" target="_blank"><span class="fa fa-twitter icon-md"></span></a>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="text-center">
-					<a href="https://www.youtube.com/channel/UC2z-JB_M2_tAxc6MCHQDOVA" class="btn btn-lg btn-charcoal" target="_blank"><span class="fa fa-youtube icon-md icon-white"></span></a>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- Footer - bloc-41 END -->
-
-<!-- Footer - bloc-42 -->
-<div class="bloc bgc-charcoal d-bloc" id="bloc-42">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-3">
-				<h3 class="mg-md bloc-mob-center-text ">
-					<a class="page-body-text" href="about.html">About</a><br>
-				</h3>
-			</div>
-			<div class="col-sm-3">
-				<h3 class="mg-md bloc-mob-center-text ">
-					<a class="page-body-text" href="contact.html">Contact Us</a><br>
-				</h3>
-			</div>
-			<div class="col-sm-3">
-				<h3 class="mg-md bloc-mob-center-text ">
-					<a class="page-body-text" href="patent.html">Patent</a><br>
-				</h3>
-			</div>
-			<div class="col-sm-3">
-				<h3 class="mg-md bloc-mob-center-text ">
-					<a class="page-body-text" href="terms-and-conditions.html">Terms &amp; Conditions</a><br>
-				</h3>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- Footer - bloc-42 END -->
-
-<!-- Footer - bloc-43 -->
-<div class="bloc bgc-charcoal d-bloc" id="bloc-43">
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-12 col-md-8 col-md-offset-2">
-				<h3 class="statement-bloc-text ">
-					© StaySorted Inc. - 2017
-				</h3>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- Footer - bloc-43 END -->
-
-</div>
-<!-- Main container END -->
-
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-	var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-		(function(){
-			var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-			s1.async=true;
-			s1.src='https://embed.tawk.to/58bd73616b2ec15bd9f6b598/default';
-			s1.charset='UTF-8';
-			s1.setAttribute('crossorigin','*');
-			s0.parentNode.insertBefore(s1,s0);
-	})();
-</script>
-<!--End of Tawk.to Script-->
-
-</body>
+    <!-- Google Analytics -->
+    <script src='js/google-analytics.js'></script>
+    <!-- Google Analytics END -->
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+          var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+          s1.async=true;
+          s1.src='https://embed.tawk.to/58bd73616b2ec15bd9f6b598/default';
+          s1.charset='UTF-8';
+          s1.setAttribute('crossorigin','*');
+          s0.parentNode.insertBefore(s1,s0);
+      })();
+    </script>
+    <!--End of Tawk.to Script-->
+  </body>
 </html>
