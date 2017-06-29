@@ -1,173 +1,141 @@
-<!doctype html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="apple-itunes-app" content="app-id=1022256487, app-argument=staysorted://x-callback-url/open?item=today">
+    <title>FAQ | Sorted | Master Your Day on iPhone and iPad | Stay Sorted</title>
+    <meta name="keywords" content="task, reminder, calendar, event, productivity, to-do lists, GTD, Sorted, Scheduling, iOS, iPhone">
+    <meta name="description" content="Sorted - Master Your Day. Sorted is a minimalistic, yet awesomely powerful day planner for the productivity obsessed.">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
     <link rel="shortcut icon" type="image/png" href="favicon.png">
-    
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="style.css"><link rel="stylesheet" href="./css/font-awesome.min.css"><link rel="stylesheet" href="./css/feather.min.css"><link href='https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    
-	<script src="./js/jquery-2.1.0.min.js"></script>
-	<script src="./js/bootstrap.min.js"></script>
-	<script src="./js/blocs.min.js"></script>
-    <title>StaySorted | Sorted 1.5 for iPhone and iPad | FAQ</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation.min.css"> -->
+    <link rel="stylesheet" href="./css/foundation.css">
+    <link rel="stylesheet" href="./css/style.css">
 
-    
-<!-- Google Analytics -->
-  <script src='js/google-analytics.js'></script>
- 
-<!-- Google Analytics END -->
-    
-</head>
-<body>
-<!-- Main container -->
-<div class="page-container">
-    
-<!-- bloc-0 -->
-<div class="bloc bgc-ghost-white l-bloc" id="bloc-0">
-	<div class="container b-divider">
-		<nav class="navbar nav-invert row">
-			<div class="navbar-header">
-				<a class="navbar-brand" href="http://staysorted.com/"><img src="img/AppIcon.png" alt="logo" srcset="img/AppIcon.png 1x, img/AppIcon@2x.png 2x, img/AppIcon@3x.png 3x" /></a>
-				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
-					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-				</button>
-			</div>
-			<div class="collapse navbar-collapse navbar-1">
-				<ul class="site-navigation nav navbar-nav">
-					<li>
-						<a href="http://staysorted.com/" id="pl-undefined">Sorted</a>
-					</li>
-					<li>
-						<a href="https://medium.com/@StaySorted/sorted-the-todo-app-that-keeps-up-with-you-ios-media-kit-243c7539d6c9#.ixosjynaq" id="pl-undefined" target="_blank">Media Kit</a>
-					</li>
-					<li>
-						<a href="faq.html">FAQ</a>
-					</li>
-					<li>
-						<div class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Features<span class="caret"></span></a>
-							<ul class="dropdown-menu" role="menu">
-								<li>
-									<a href="apple-watch-app.html">Apple Watch</a>
-								</li>
-								<li>
-									<a href="url-scheme.html">URL Scheme</a>
-								</li>
-								<li>
-									<a href="share-extension.html">Share Extension</a>
-								</li>
-								<li>
-									<a href="3d-touch-support.html">3D Touch Support</a>
-								</li>
-							</ul>
-						</div>
-					</li>
-					<li>
-						<a href="https://itunes.apple.com/app/apple-store/id1022256487?pt=2028806&amp;ct=SortedWebsite&amp;mt=8" target="_blank">Download</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-	</div>
-</div>
-<!-- bloc-0 END -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <div class="background">
+      <div class="show-for-small-only row small-logo">
+        <div class="columns center">
+          <img src="images/Icon.png" srcset="images/Icon.png 1x, images/Icon.png 2x" alt="Sorted App Icon">
+        </div>
+      </div>
+      <nav class="row">
+        <div class="columns align-middle">
+          <ul>
+            <li><a href="http://staysorted.com/"><img class="hide-for-small-only" src="images/Icon.png" srcset="images/Icon.png 1x, images/Icon.png 2x" alt="Sorted App Icon"></a></li>
+            <li><a href="http://staysorted.com/">SORTED</a></li>
+            <li><a href="https://medium.com/@StaySorted/sorted-the-todo-app-that-keeps-up-with-you-ios-media-kit-243c7539d6c9#.ixosjynaq" target="_blank">PRESS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="faq.html" class="selected">FAQ</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
 
-<!-- bloc-17 -->
-<div class="bloc tc-charcoal bgc-ghost-white l-bloc" id="bloc-17">
-	<div class="container bloc-lg">
-		<div class="row">
-			<div class="col-sm-12">
-				<h3 class="mg-md  tc-charcoal">
-					Frequently Asked Questions
-				</h3>
-				<p>
-					<strong><u>Does Sorted support iCloud?</u><br></strong><br>Yes. Sorted syncs your reminders via iCloud CloudKit service. All information synced is kept private and secure by Apple.<br><br><strong><u>Does Sorted for iOS support Background App Refresh?</u></strong><br><br>Yes. Whenever Background App Refresh launches Sorted, Sorted will connect to CloudKit and ensure your reminders are always kept up to date.<br><br><strong><u>Does Sorted work with the Reminders app on iOS / OSX?</u></strong><br><br>As of Version 1.5 Sorted now has Reminders Integration. Import lists over to Sorted and use Siri to easily add reminders onto Sorted!<br><br><strong><u>Does Sorted Have Calendar Integration?</u></strong><br><br>Currently in Version 1.5, Sorted does not support any Calendar Integration.<br><br>However this highly demanded feature is currently under development and will be included in our next major patch update, Version 2.0.<br><br><strong><u>Why Do Repeated Reminders Not Show Future Occurrences?</u></strong><br><br>In Sorted, you may be wondering if it is a bug that you can only see the most recent task of your repeated reminders and not any of the future occurrences.<br><br>This is actually by design, Sorted will only show the most immediate occurrence of your Repeated Reminders.<br><br>We have had many requests on showing all occurrences on the Calendar perhaps as an option in Settings. This is something that will be worked on in future patches.<br><br><strong><u>Why schedule tasks?</u></strong><br><br>Behavioral studies show that scheduled tasks are more likely to get done.<br><br>Scheduling also forces us to consider our most limited resource: TIME! This helps us prioritize what we should and can do in a day.<br><br><strong><u>Does Sorted follow any task management approaches?</u></strong><br><br>Sorted was built on the following concepts:<br><br>The&nbsp;<a class="ltc-ball-blue" href="http://www.lifehack.org/articles/featured/back-to-basics-the-tickler-file.html" target="_blank">tickler file system</a>&nbsp;(aka GTD filing system, 43 folders)<br><a class="ltc-ball-blue" href="http://www.lifehack.org/articles/productivity/scheduling-time-blocks.html" target="_blank">Scheduled</a>&nbsp;tasks gets done<br>Quick and simple is better than overly complex systems <br><br>
-				</p>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-17 END -->
+    <!--content start-->
+    <section class="row feature align-middle">
+      <div class="small-12 medium-12 columns description">
 
-<!-- ScrollToTop Button -->
-<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
-<!-- ScrollToTop Button END-->
+        <h3>Does Sorted follow any task management approaches?</h3>
+        <p>Sorted was built on a number of concepts. The <a class="ltc-ball-blue" href="http://www.lifehack.org/articles/featured/back-to-basics-the-tickler-file.html" target="_blank">tickler file system</a>, Kevin Kruse's research highlighted by the Forbes article <a href="https://www.forbes.com/sites/kevinkruse/2015/07/10/to-do-lists-time-management/#16d6acb44413">Millionaires Don't Use To-Do Lists</a>, David Allen's <a href="http://gettingthingsdone.com/">Getting Things Done (GTD)</a> and inspiration from the 7-Minute Workout.</p>
 
+        <h3>What does 7-Minute Workout have to do with tasks?</h3>
+        <p>Plenty. We've always thought the 7-Minute Workout is about habit and consistency. It's one thing to spend 45 minutes in the gym, but 7 minutes? That's doable.</p>
+        <p>We took that philosophy to Sorted. What if we can make task scheduling so easy, there's no excuse not to do it? That's where we started off when we designed Sorted for our own personal use.</p>
 
-<!-- Footer - bloc-41 -->
-<div class="bloc bgc-charcoal d-bloc" id="bloc-41">
-	<div class="container bloc-sm">
-		<div class="row">
-			<div class="col-sm-4">
-				<div class="text-center">
-					<a href="https://www.facebook.com/StaySortedApp/" class="btn btn-lg btn-charcoal" target="_blank"><span class="special-tag-for-editing-text-with-html"></span><span class="special-tag-for-editing-text-with-html"></span><span class="fa fa-facebook icon-md"></span></a>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="text-center">
-					<a href="https://twitter.com/Stay_Sorted" class="btn btn-lg btn-charcoal" target="_blank"><span class="fa fa-twitter icon-md"></span></a>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="text-center">
-					<a href="https://www.youtube.com/channel/UC2z-JB_M2_tAxc6MCHQDOVA" class="btn btn-lg btn-charcoal" target="_blank"><span class="fa fa-youtube icon-md icon-white"></span></a>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- Footer - bloc-41 END -->
+        <h3>Why schedule tasks?</h3>
+        <p>Behavioral studies show that scheduled tasks are significantly more likely to get done. However, there is a simplier reason we recommend scheduling tasks.</p>
+        <p>Have you ever faced the growing <b>TO-DO LIST of DOOM</b>? You know, the to-do list that keeps on growing until you don't even want to look at it anymore? We sure have. That's the driving force behind why we created Sorted. We learnt through lots of reading and experience that time is the best prioritizer.</p>
+        <p>Being productive isn’t always about doing more, it’s about being more conscious of what you work on and putting your energy into the things that will really make a difference.</p>
+        <p>We designed Sorted to make task scheduling quick and painless. So quick and painless (dare we say even fun?) that there is no reason not to do it. Maybe even multiple times a day as your day unfolds.</p>
+        <p>Try it for a few days and you will find that you begin to appreciate the time you have available so much more.</p>
 
-<!-- Footer - bloc-42 -->
-<div class="bloc bgc-charcoal d-bloc" id="bloc-42">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-3">
-				<h3 class="mg-md bloc-mob-center-text ">
-					<a class="page-body-text" href="about.html">About</a><br>
-				</h3>
-			</div>
-			<div class="col-sm-3">
-				<h3 class="mg-md bloc-mob-center-text ">
-					<a class="page-body-text" href="contact.html">Contact Us</a><br>
-				</h3>
-			</div>
-			<div class="col-sm-3">
-				<h3 class="mg-md bloc-mob-center-text ">
-					<a class="page-body-text" href="patent.html">Patent</a><br>
-				</h3>
-			</div>
-			<div class="col-sm-3">
-				<h3 class="mg-md bloc-mob-center-text ">
-					<a class="page-body-text" href="terms-and-conditions.html">Terms &amp; Conditions</a><br>
-				</h3>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- Footer - bloc-42 END -->
+        <h3>Wouldn't scheduling tasks feel overwhelming?</h3>
+        <p>At first it might, but that's probably because you are over-scheduling yourself and putting too much on your plate. Scheduling your tasks will surface this problem to you whereas sticking with an un-timed to-do list will just hide the issue.</p>
+        <p>If you feel overwhelmed with your scheduled tasks, then it's time you lighten your load by delegating to others or simply just putting less important stuff off to another day.</p>
 
-<!-- Footer - bloc-43 -->
-<div class="bloc bgc-charcoal d-bloc" id="bloc-43">
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-12 col-md-8 col-md-offset-2">
-				<h3 class="statement-bloc-text ">
-					© StaySorted Inc. - 2017
-				</h3>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- Footer - bloc-43 END -->
+        <h3>What happens to overdue tasks?</h3>
+        <p>In Sorted, overdue tasks gets carried over to the next day and the next. It'll keep following you until you either complete it or reschedule it to another day. It's the perfect way to make sure you never miss a thing.</p>
 
-</div>
-<!-- Main container END -->
-    
+        <h3>I just came back from a vacation...</h3>
+        <p>If you just came back from a vacation and find a ton of overdue tasks. Simply select them (try our multi-select gesture) and unschedule everything and start fresh.</p>
+        <p>We recommend scheduling back the most important items for the next three days first. Then work your momentum back up from there.</p>
 
-</body>
+        <h3>How does Sorted sync my data?</h3>
+        <p>Sorted syncs your data using Apple's CloudKit. All your information are kept private and secure by Apple. That means not even our engineers will be able to gain access to your data.</p>
+
+        <h3>Does Sorted work with Apple Reminders on iOS / macOS?</h3>
+        <p>As of Version 1.5 Sorted has a feature called Reminder Capture which will import lists from Apple Reminders over to Sorted. This allows you to use Siri to add reminders onto Sorted.</p>
+        <p>* Do note that Reminder Capture will remove items from Apple Reminders if you choose to use it. So if you have any lists you wish to keep in Apple Reminders, then make sure you don't select them for capturing.</p>
+
+        <h3>Can I see calendar events in Sorted?</h3>
+        <p>As of Sorted 2.0 you can now see your calendar events directly within Sorted. Choose to show any calendar that is connected to your iOS device. This makes it easy for you to properly plan your day around your events and keep tabs on Birthdays and Holidays.</p>
+        <p>Sorted also adds the ability for you to "complete" calendar events. This allows you to dismiss events once you are done with them to further clear your mind. Dismissing events is NOT destructive and will not affect anything outside of Sorted.</p>
+
+        <h3>What if I have questions?</h3>
+        <p>Feel free to contact us. We're here to help <a href="mailto:hello@staysorted.com">hello@staysorted.com</a>.</p>
+      </div>
+    </section>
+    <!--content end  -->
+
+    <footer class="row">
+      <div class="columns">
+        <div class="row">
+          <div class="columns">
+            <hr/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-4 columns">
+            <ul>
+              <li class="header">Support</li>
+              <li><a href="faq.html">Help</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="patent.html">Patent</a></li>
+              <li><a href="faq.html">Getting stuff done</a></li>
+            </ul>
+          </div>
+          <div class="large-4 columns">
+            <ul>
+              <li class="header">News</li>
+              <li><a href="https://medium.com/@StaySorted" target="_blank">Blog</a></li>
+              <li><a href="https://twitter.com/Stay_Sorted" target="_blank">Twitter</a></li>
+              <li><a href="https://www.facebook.com/StaySortedApp/" target="_blank">Facebook</a></li>
+              <li><a href="https://www.youtube.com/channel/UC2z-JB_M2_tAxc6MCHQDOVA" target="_blank">YouTube</a></li>
+              <li><a href="https://medium.com/@StaySorted/sorted-the-todo-app-that-keeps-up-with-you-ios-media-kit-243c7539d6c9#.ixosjynaq" target="_blank">Press Kit</a></li>
+            </ul>
+          </div>
+          <div class="large-4 columns">
+            <ul>
+              <li class="header">Legal</li>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="terms-and-conditions.html">Terms</a></li>
+              <li>－</li>
+              <li>© StaySorted Inc. - 2017</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Google Analytics -->
+    <script src='js/google-analytics.js'></script>
+    <!-- Google Analytics END -->
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+          var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+          s1.async=true;
+          s1.src='https://embed.tawk.to/58bd73616b2ec15bd9f6b598/default';
+          s1.charset='UTF-8';
+          s1.setAttribute('crossorigin','*');
+          s0.parentNode.insertBefore(s1,s0);
+      })();
+    </script>
+    <!--End of Tawk.to Script-->
+  </body>
 </html>
