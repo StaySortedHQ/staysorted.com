@@ -151,6 +151,41 @@ hr {
 .blocsapp-device-watch.watch-white {
   background-image: url("../images/Apple-watch-white.png"); }
 
+pre {
+  font-size: 90%;
+  line-height: 1.2em;
+  font-family: "Courier 10 Pitch", Courier, monospace;
+  white-space: pre;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -o-pre-wrap;
+  height: 1%;
+  width: auto;
+  display: block;
+  clear: both;
+  color: #555555;
+  padding: 0em 0em;
+  margin: auto 40px auto 40px;
+  background: #f4f4f4;
+  border: solid 1px #e1e1e1; }
+
+code {
+  font-size: 90%;
+  line-height: 1.2em;
+  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  display: inline;
+  color: #555555;
+  padding: 1em 1em;
+  background: #f4f4f4; }
+
+pre code {
+  border: none;
+  background: none;
+  font-size: 0.875em;
+  line-height: 1em;
+  letter-spacing: normal;
+  word-break: break-all; }
+
 /* Small only */
 @media screen and (max-width: 39.9375em) {
   body {

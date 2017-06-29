@@ -38,11 +38,52 @@
     <!--content start-->
     <section class="row feature align-middle">
       <div class="small-12 medium-12 columns">
-        <h3>Sorted's URL Scheme</h3>
-        <p>
-          Coming Soon...
-        </p>
-      </div>
+        <h3>What is a URL Scheme?</h3>
+        <p>URL Schemes allows different apps on iOS to work together. Sorted's URL scheme supports actions such as opening the app to specific views and adding tasks. For example, you can use Sorted's URL Scheme with <a href="">Workflow</a> and <a href="#">IFTTT</a> to automate creation of tasks in Sorted.</p>
+        <h3>Add tasks</h3>
+        <pre>
+          <code class="html">
+            staysorted://x-callback-url/add?title=…[&list=…][&date=(yyyy-MM-dd HH:mm)]
+
+            [Properties]
+
+            title: (required) and should not be empty.
+            label: (optional) and should match the title of the label or list.
+            date:  (optional) can be in the format yyyy-MM-dd or yyyy-MM-dd HH:mm
+
+            [Details]
+
+            If label is not specified or if empty, then tasks will be created in the inbox.
+            If specified, then Sorted will match existing labels in a case-insensitive manner.
+            Finally, if no labels match, a new label will be created.
+
+            [Example]
+
+            staysorted://x-callback-url/add?title=Buy%20Eggs&list=errands&date=2017-10-31%2018:30
+            // Task => Buy Eggs on Oct 31st 2017 at 6:30 pm
+          </code>
+        </pre>
+
+        <h3>Open Sorted to a specific view</h3>
+        <pre>
+          <code class="html">
+            staysorted://x-callback-url/open?item=...
+
+            [Properties]
+
+            item: (required) and should be one of the following values:
+            - today
+            - lists
+            - inbox
+            - search
+
+            [Example]
+
+            staysorted://x-callback-url/open?item=today
+            // This will open Sorted to the Today screen
+          </code>
+        </pre>
+
     </section>
     <!--content end  -->
 
@@ -60,7 +101,7 @@
               <li><a href="faq.html">Help</a></li>
               <li><a href="contact.html">Contact</a></li>
               <li><a href="patent.html">Patent</a></li>
-              <li><a href="guide.html">Getting stuff done</a></li>
+              <li><a href="faq.html">Getting stuff done</a></li>
             </ul>
           </div>
           <div class="large-4 columns">
@@ -78,11 +119,10 @@
               <li class="header">Legal</li>
               <li><a href="privacy.html">Privacy Policy</a></li>
               <li><a href="terms-and-conditions.html">Terms</a></li>
+              <li>－</li>
+              <li>© StaySorted Inc. - 2017</li>
             </ul>
           </div>
-        </div>
-        <div class="row">
-          <div class="large-4 large-offset-4 columns center">© StaySorted Inc. - 2017</div>
         </div>
       </div>
     </footer>
