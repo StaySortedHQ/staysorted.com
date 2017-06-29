@@ -275,7 +275,10 @@ pre code {
   h3 {
     font-weight: 500;
     font-size: 1.3em;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    line-height: 1.4em; }
+    h3:not(:first-child) {
+      margin-top: 60px; }
 
   nav {
     padding-left: 20px; }
