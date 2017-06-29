@@ -4,10 +4,10 @@
 body {
   font-family: -apple-system, system-ui, "SF UI Text", Roboto, "Helvetica Neue", sans-serif;
   font-size: 18px;
-  color: #666F7C; }
+  color: #666f7c; }
 
 h1, h2, h3 {
-  color: #333C48; }
+  color: #333c48; }
 
 h1 {
   font-weight: bold;
@@ -41,7 +41,7 @@ nav {
     nav li .selected {
       font-weight: bold; }
     nav li a {
-      color: #333C48; }
+      color: #333c48; }
 
 .hero {
   padding-top: 50px;
@@ -52,7 +52,7 @@ nav {
   background-repeat: no-repeat; }
   @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
     .hero {
-      /*background-image: url("../images/HeroDevices@2x.png");*/ } }
+      background-image: url("../images/HeroDevices@2x.png"); } }
   .hero p {
     font-size: 1.3em;
     font-weight: 450;
@@ -106,7 +106,7 @@ footer {
   footer li.header {
     font-weight: bold; }
   footer a {
-    color: #666F7C; }
+    color: #666f7c; }
 
 hr {
   border-width: 1px;
@@ -124,7 +124,7 @@ hr {
   height: 501px; }
 
 .background {
-  background-color: #F3F5F7; }
+  background-color: #f3f5f7; }
 
 .center {
   text-align: center; }
@@ -191,7 +191,7 @@ pre code {
   body {
     font-family: -apple-system, system-ui, "SF UI Text", Roboto, "Helvetica Neue", sans-serif;
     font-size: 16px;
-    color: #666F7C; }
+    color: #666f7c; }
 
   .small-logo {
     padding-top: 20px; }
@@ -218,7 +218,10 @@ pre code {
   h3 {
     font-weight: 500;
     font-size: 1.3em;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    line-height: 1.4em; }
+    h3:not(:first-child) {
+      margin-top: 60px; }
 
   .hero {
     padding-top: 10px;
@@ -226,7 +229,8 @@ pre code {
     background-image: url("../images/HeroDevices.png");
     background-size: 90% auto;
     background-position: 80% 100%;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat; } }
+@media screen and (max-width: 39.9375em) {
     .hero p {
       font-size: 1em;
       font-weight: 450;
@@ -292,7 +296,8 @@ pre code {
     background-image: url("../images/HeroDevices.png");
     background-size: 70% auto;
     background-position: 90% 100%;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat; } }
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
     .hero p {
       font-size: 1em;
       font-weight: 450;
@@ -316,5 +321,3 @@ pre code {
     margin-top: 40px; } }
 /* Large and up */
 /* Large only */
-
-/*# sourceMappingURL=style.css.map */
