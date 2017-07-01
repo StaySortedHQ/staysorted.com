@@ -90,7 +90,7 @@ nav {
 .hero {
   padding-top: 50px;
   height: 700px;
-  @include background-2x('../images/HeroDevices', 'png', auto, auto, 80% 100%, no-repeat);
+  @include background-2x('../images/HeroDevices', 'png', 611px, auto, 80% 100%, no-repeat);
 
   p {
     font-size: 1.3em;
