@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>calendar-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="calendar-icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="CalendarIcon" transform="translate(9.798990, 11.798990)">
+            <rect id="Dots" fill="#FF7352" x="5.52631579" y="11.4705882" width="3" height="3" rx="1.5"></rect>
+            <rect id="Dots" fill="#FF7352" x="13.5263158" y="11.4705882" width="3" height="3" rx="1.5"></rect>
+            <rect id="Dots" fill="#FF7352" x="21.5263158" y="11.4705882" width="3" height="3" rx="1.5"></rect>
+            <rect id="Dots" fill="#FF7352" x="5.52631579" y="17.4705882" width="3" height="3" rx="1.5"></rect>
+            <rect id="Dots" fill="#FF7352" x="13.5263158" y="17.4705882" width="3" height="3" rx="1.5"></rect>
+            <rect id="Dots" fill="#FF7352" x="21.5263158" y="17.4705882" width="3" height="3" rx="1.5"></rect>
+            <rect id="Separator" fill="#FF7352" x="1" y="7" width="27" height="2"></rect>
+            <path d="M5,1.5 C3.06700338,1.5 1.5,3.06700338 1.5,5 L1.5,21 C1.5,22.9329966 3.06700338,24.5 5,24.5 L25,24.5 C26.9329966,24.5 28.5,22.9329966 28.5,21 L28.5,5 C28.5,3.06700338 26.9329966,1.5 25,1.5 L5,1.5 Z" id="Border" stroke="#FF7352" stroke-width="3"></path>
+        </g>
+    </g>
+</svg>
