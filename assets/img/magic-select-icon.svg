@@ -1,1 +1,13 @@
-<svg height="50" viewBox="0 0 50 50" width="50" xmlns="http://www.w3.org/2000/svg"><g fill="#fff" fill-rule="evenodd" stroke="#ff355d" stroke-width="3" transform="matrix(.8660254 -.5 .5 .8660254 4.308657 15.429492)"><rect height="27" rx="2" width="4" x="11.5" y="11.5"/><path d="m13.5 20.25-7.93510091 4.1717294 1.51546943-8.8358647-6.41963149-6.25759412 8.87171252-1.28913529 3.96755045-8.03913529 3.9675505 8.03913529 8.8717125 1.28913529-6.4196315 6.25759412 1.5154694 8.8358647z"/></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>magic-select-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="magic-select-icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-8" transform="translate(21.691343, 26.000000) rotate(-30.000000) translate(-21.691343, -26.000000) translate(8.191343, 6.000000)" fill="#FFFFFF" stroke="#FF355D" stroke-width="3">
+            <rect id="Rectangle-3" x="11.5" y="11.5" width="4" height="27" rx="2"></rect>
+            <polygon id="Star-2" points="13.5 20.25 5.56489909 24.4217294 7.08036852 15.5858647 0.66073703 9.32827058 9.53244955 8.03913529 13.5 0 17.4675505 8.03913529 26.339263 9.32827058 19.9196315 15.5858647 21.4351009 24.4217294"></polygon>
+        </g>
+    </g>
+</svg>
