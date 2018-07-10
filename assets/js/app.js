@@ -14582,6 +14582,17 @@ window.$ = _jquery2.default;
 // the line below
 //import './lib/foundation-explicit-pieces';
 
+(function () {
+  (0, _jquery2.default)(function () {
+    return (0, _jquery2.default)('video').click(function () {
+      if (this.paused) {
+        return this.play();
+      } else {
+        return this.pause();
+      }
+    });
+  });
+}).call(undefined);
 
 (0, _jquery2.default)(document).foundation();
 
