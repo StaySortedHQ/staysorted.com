@@ -1,0 +1,89 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorted³</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+  </head>
+  <body>
+
+    <!-- Top bar with navigation for large screen -->
+    <div class="top-bar" id="responsive-menu">
+      <div class="top-bar-left">
+        <ul class="menu">
+          <li class="menu-text"><a href="#">Sorted³</a></li>
+        </ul>
+      </div>
+      <div class="top-bar-right">
+        <ul class="menu">
+          <li><a href="#">Press</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Off canvas sidebar menu for small screen -->
+    <div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
+      <button class="menu-icon" type="button" data-toggle="offCanvas"></button>
+      <div class="title-bar-title">Sorted³</div>
+    </div>
+
+    <!-- Off canvas sidebar menu for small screen -->
+    <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+      <ul class="vertical menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Press</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- This wrapper is needed for off-canvase menu -->
+    <div class="off-canvas-content" data-off-canvas-content>
+
+      <!-- Render page content -->
+      <!-- Form based off: http://reusableforms.com/d/b/html-email-contact-form -->
+      <section class="hero grid-x align-center-middle grid-margin-x">
+        <div class="cell small-10 medium-2 text-center medium-text-left">
+          <img class="app-icon" src="assets/img/app-icon.svg" alt="">
+          <p>Redesigned from the ground up to help you <em>seize your day.</em></p>
+          <div class="app-badge hide-for-small-only">
+            <a href="#"><img src="assets/img/app-store-badge.svg" alt="Available on the App Store"></a>
+          </div>
+        </div>
+        <div class="cell medium-1 shrink hide-for-small-only"></div>
+        <div class="cell shrink">
+          <img class="show-for-small-only" width="228" height="368"
+            data-interchange="[assets/img/hero-image-small@2x.png, small], [assets/img/hero-image-small@3x.png, retina]" alt="Sorted on iPhone and Apple Watch">
+          <img class="hide-for-small-only" width="581" height="462"
+            data-interchange="[assets/img/hero-image@2x.png, medium], [assets/img/hero-image@3x.png, retina]" alt="Sorted on iPad, iPhone and Apple Watch">
+        </div>
+      </section><div class="grid-container">
+        <div class="contact-us cell">
+          <h1>Contact Us</h1>
+          <p>Got a question? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+          <form action="post" id="contact-form">
+            <label for="name">Name</label>
+            <input id="name" type="text" name="Name" required maxlength="100" placeholder="Harriet Aerch">
+      
+            <label for="email">Email</label>
+            <input id="email" type="email" required maxlength="200" placeholder="harriet@aerch.com">
+      
+            <label for="message">Message</label>
+            <textarea name="Message" id="message" cols="6000" rows="10" required placeholder="Hey Sorted,&#10;&#10;Love what you guys are doing. I've got a question. How do I buy you guys a drink?&#10;&#10;Cheers / Harriet"></textarea>
+      
+            <div class="send-button-wrapper grid-x align-right">
+              <button class="send-button" type="submit">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
