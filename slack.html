@@ -46,12 +46,38 @@
     <div class="off-canvas-content" data-off-canvas-content>
 
       <!-- Render page content -->
-      <div class="cell align-middle-center">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSev_LK4olWj2kD5-LybL7sr48DkzRT-2Ta9z7mzXM_VsbBTfA/viewform?embedded=true" width="100%" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+      <section class="hero grid-x align-center-middle grid-margin-x">
+        <div class="cell small-10 medium-2 text-center medium-text-left">
+          <img class="app-icon" src="assets/img/app-icon.svg" alt="">
+          <p>Redesigned from the ground up to help you <em>seize your day.</em></p>
+          <div class="app-badge hide-for-small-only">
+            <a href="#"><img src="assets/img/app-store-badge.svg" alt="Available on the App Store"></a>
+          </div>
+        </div>
+        <div class="cell medium-1 shrink hide-for-small-only"></div>
+        <div class="cell shrink">
+          <img class="show-for-small-only" width="228" height="368"
+            data-interchange="[assets/img/hero-image-small@2x.png, small], [assets/img/hero-image-small@3x.png, retina]" alt="Sorted on iPhone and Apple Watch">
+          <img class="hide-for-small-only" width="581" height="462"
+            data-interchange="[assets/img/hero-image@2x.png, medium], [assets/img/hero-image@3x.png, retina]" alt="Sorted on iPad, iPhone and Apple Watch">
+        </div>
+      </section><div class="grid-container">
+        <div class="slack medium-8 medium-offset-2 cell">
+          <h1>Join our Slack community</h1>
+          <p>Our Slack community is where our users discuss stuff with us. Ask us questions and share tips on how they use Sorted.</p>
+          <input id="email" type="email" placeholder="your@email.com" />
+          <div class="grid-x align-right">
+            <button id="button" class="send-button">Let me in!</button></p>
+          </div>
+          <p id="return_message"></p>
+        </div>
       </div>
+      
+      <!-- https://github.com/amv/serverless-slack-invite-api/blob/master/examples/index.html -->
       
     </div>
 
     <script src="assets/js/app.js"></script>
+      <script src="assets/js/slack.js"></script>
   </body>
 </html>
