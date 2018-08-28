@@ -14592,7 +14592,20 @@ window.$ = _jquery2.default;
       }
     });
   });
+
+  (0, _jquery2.default)(function () {
+    var source = getURLParameter('ref');
+    if (source == 'producthunt') {
+      return (0, _jquery2.default)('.app-badge a').attr('href', 'https://itunes.apple.com/app/apple-store/id1306893526?pt=2028806&ct=ProductHunt&mt=8');
+    } else if (source == 'sspai') {
+      return (0, _jquery2.default)('.app-badge a').attr('href', 'https://itunes.apple.com/app/apple-store/id1306893526?pt=2028806&ct=sspai&mt=8');
+    }
+  });
 }).call(undefined);
+
+function getURLParameter(name) {
+  return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [null, ''])[1].replace(/\+/g, '%20')) || null;
+}
 
 (0, _jquery2.default)(document).foundation();
 
